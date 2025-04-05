@@ -39,17 +39,25 @@ export class NavbarComponent implements OnInit {
 
   @HostListener('window:scroll', [])
   onScroll() {
+    const navLogo = document.getElementById('logo');
+    const homeLogo = document.getElementById('home-logo');
+
+    // On the home page, manage the scroll effect for both logos
     if (this.isHomePage) {
-      const navLogo = document.getElementById('logo');
+      // If scrolled down more than 25px, add 'scrolled' class to both logos
       if (window.scrollY > 25) {
-        if (!this.hasScrolled) {
-          this.hasScrolled = true; // Mark as scrolled
-          navLogo?.classList.add('scrolled');
-        }
+        navLogo?.classList.add('scrolled');
+        homeLogo?.classList.add('scrolled');
+        this.hasScrolled = true; // Mark that the user has scrolled
       } else {
-        this.hasScrolled = false; // Reset if not scrolled
         navLogo?.classList.remove('scrolled');
+        homeLogo?.classList.remove('scrolled');
+        this.hasScrolled = false; // Reset scroll tracking
       }
+    } else {
+      // On other pages, ensure both logos are always in the "scrolled" state
+      navLogo?.classList.add('scrolled');
+      homeLogo?.classList.add('scrolled');
     }
   }
 }

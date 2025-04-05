@@ -329,8 +329,8 @@ p {
     background: url('assets/images/diana-cd.png') no-repeat center center / cover;
     border: solid var(--highlight-tertiary-color) 4px;
     border-radius: 50%;
-    height: 15vh;
-    width: 15vh;
+    height: 25vh;
+    width: 25vh;
 }
 
 
@@ -509,6 +509,11 @@ footer #contact i {
     footer #address,
     footer #contact {
         justify-content: center;
+    }
+
+    #cd {
+        height: 15vh;
+        width: 15vh;
     }
 
     /* Sevices Section */
