@@ -3,7 +3,9 @@
       <!-- Logo / Home Link -->
       <div class="static-navbar">
         <a routerLink="home">
-          <img id="logo" class="scrolled" src="assets/images/logo.png" alt="Diana Vizvary">
+          <img id="logo"  [ngClass]="{
+            'scrolled': !isHomePage && hasScrolled || (isHomePage && hasScrolled)
+          }" src="assets/images/logo.png" alt="Diana Vizvary">
         </a>
       </div>
   
