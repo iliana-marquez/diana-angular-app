@@ -309,13 +309,13 @@ p {
     padding: 1rem 1rem 0 1rem;
 }
 
-/* #hero-image {
-    background: url('../images/diana-hero-pic-homepage.png') no-repeat bottom center / contain;
+#hero-image {
+    background: url('assets/images/diana-hero-pic-homepage.png') no-repeat bottom center / contain;
     height: 425px;
     width: 100%;
 }
 
-#about-hero-image {
+/* #about-hero-image {
     background: url('../images/diana-about-hero-pic.png') no-repeat bottom center / contain;
     height: 400px;
 } */
