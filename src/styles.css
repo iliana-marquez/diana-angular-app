@@ -1,1 +1,638 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    /* colors */
+    --highlight-primary-color: #ff9500;
+    /* orange */
+    --highlight-secondary-color: #f4275e;
+    /* coral */
+    --highlight-tertiary-color: #cb6be6;
+    /* lila */
+    --primary-color: #000000;
+    /* black */
+    --secondary-color: #fcfcfc;
+    /* white */
+    --tertiary-color: #5d2f8e;
+    /* purple */
+    /* fonts */
+    --primary-font: 'Mr+Dafoe', cursive;
+    --secondary-font: 'Oswald', serif;
+    --tertiary-font: 'Poppins', sans-serif;
+}
+
+/* General Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--tertiary-font);
+}
+
+/* Titles */
+.coursive-title {
+    font-family: var(--primary-font);
+}
+
+.block-title {
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.hl-primary-color-title {
+    color: var(--highlight-primary-color);
+}
+
+.hl-secondary-color-title {
+    color: var(--highlight-secondary-color);
+}
+
+.hl-tertiary-color-title {
+    color: var(--highlight-tertiary-color);
+}
+
+.tertiary-color-title {
+    color: var(--tertiary-color);
+}
+
+.secondary-color-title {
+    color: var(--secondary-color);
+}
+
+/* Bootstrap Dropdown */
+button {
+    background-color: transparent;
+    border: 0;
+}
+
+.dropdown-menu {
+    background-color: var(--primary-color);
+    border-radius: 0;
+    
+}
+
+.dropdown-menu  a {
+    text-align: center;
+}
+
+/* Buttons Sytle */
+.custom-btn {
+    font-family: var(--secondary-font);
+    font-weight: 450;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding-bottom: .3rem;
+    padding-top: .3rem;
+    text-decoration: none;
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn-hl-primary-color {
+    background-color: transparent;
+    border: var(--highlight-primary-color) solid 3px;
+    color: var(--highlight-primary-color);
+    transition: 0.2s ease-in-out;
+}
+
+.btn-hl-primary-color:hover {
+    background-color: var(--highlight-primary-color);
+    border: var(--highlight-primary-color) solid 3px;
+    color: var(--primary-color);
+}
+
+.btn-hl-secondary-color {
+    background-color: transparent;
+    border: var(--highlight-secondary-color) solid 3px;
+    color: var(--highlight-secondary-color);
+    transition: 0.2s ease-in-out;
+}
+
+.btn-hl-secondary-color:hover {
+    background-color: var(--highlight-secondary-color);
+    border: var(--highlight-secondary-color) solid 3px;
+    color: var(--primary-color);
+}
+
+.btn-hl-tertiary-color {
+    background-color: transparent;
+    border: var(--highlight-tertiary-color) solid 3px;
+    color: var(--highlight-tertiary-color);
+    transition: 0.2s ease-in-out;
+}
+
+.btn-hl-tertiary-color:hover {
+    background-color: var(--highlight-tertiary-color);
+    border: var(--highlight-tertiary-color) solid 3px;
+    color: var(--primary-color);
+}
+
+.btn-primary-color {
+    background-color: transparent;
+    border: var(--primary-color) solid 3px;
+    color: var(--primary-color);
+}
+
+.btn-primary-color:hover {
+    background-color: var(--primary-color);
+    border: var(--primary-color) solid 3px;
+    color: var(--secondary-color);
+}
+
+.btn-secondary-color {
+    background-color: transparent;
+    border: var(--secondary-color) solid 3px;
+    color: var(--secondary-color);
+}
+
+.btn-secondary-color:hover {
+    background-color: var(--secondary-color);
+    border: var(--secondary-color) solid 3px;
+    color: var(--primary-color);
+}
+
+.btn-tertiary-color {
+    background-color: transparent;
+    border: var(--tertiary-color) solid 3px;
+    color: var(--tertiary-color);
+}
+
+.btn-tertiary-color:hover {
+    background-color: var(--tertiary-color);
+    border: var(--tertiary-color) solid 3px;
+    color: var(--secondary-color);
+}
+
+.sharp-corners,
+.sharp-corners * {
+    border-radius: 0;
+}
+
+/* Navigation */
+header {
+    position: fixed;
+    width: 100%;
+}
+
+.nav-container {
+    padding: 0.5rem;
+    /* background: linear-gradient(
+        to bottom, 
+        var(--primary-color, #000000) 80%, 
+        rgba(0, 0, 0, 0.5) 90%,
+        rgba(0, 0, 0, 0) 100%
+        ); */
+    background-color: rgba(0, 0, 0, 0.9);    
+    color: var(--secondary-color);
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#logo {
+    height: 2.5rem;
+}
+
+.nav-container {
+    position: relative;
+}
+
+/* Navigation Section */
+nav li {
+    list-style: none;
+    text-align: left;
+}
+
+nav a,
+button,
+.dropdown-menu a,
+footer * a {
+    padding: 0 0.5rem 0 0.5rem;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-family: var(--secondary-font);
+    font-size: 1.4rem;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+#menu-icon {
+    height: 1.5rem;
+}
+
+#menu-icon {
+    transition: transform 0.4s ease-in-out;
+}
+
+#menu-icon.rotated {
+    transform: rotate(180deg); /* Rotates the icon when toggled */
+}
+
+/* nav not visible on small and md devices */
+#links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width:100%;
+    z-index: 1000;
+    height: 100vh;
+    transform: translateX(100%); /* Start off-screen */
+    transition: transform 0.4s ease-in-out;
+}
+
+#links.show {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: translateX(0);
+}
+
+nav ul {
+    display: flex;
+    flex-flow: column;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: end;
+}
+
+/* Logo animation from hero to navbar */
+#logo {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Make hero logo larger */
+#home-logo {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* When scrolled, fade out and move up */
+#home-logo.scrolled {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+/* When scrolling down */
+#logo.scrolled {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Main */
+main {
+    padding-top: 72px;
+    background-color: var(--primary-color);
+}
+
+p {
+    font-size: 1rem;
+}
+
+/* HERO Section */
+#hero {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#hero-intro {
+    padding: 1rem 1rem 0 1rem;
+}
+
+/* #hero-image {
+    background: url('../images/diana-hero-pic-homepage.png') no-repeat bottom center / contain;
+    height: 425px;
+    width: 100%;
+}
+
+#about-hero-image {
+    background: url('../images/diana-about-hero-pic.png') no-repeat bottom center / contain;
+    height: 400px;
+} */
+
+#home-logo {
+    width: 300px;
+}
+
+/* Services(CD) Section */
+/* #cd {
+    background: url('../images/diana-cd.png') no-repeat center center / cover;
+    border: solid var(--highlight-tertiary-color) 4px;
+    border-radius: 50%;
+    height: 15vh;
+    width: 15vh;
+} */
+
+
+/* Carrer Section About Page */
+#carreer {
+    padding: 0;
+    margin: 0;
+    background-color: var(--secondary-color);
+}
+
+#carreer .row {
+    --bs-gutter-x: 0.5rem;
+}
+
+/* #carreer-foto-2 {
+    background: url('../images/baby-diana.jpg') no-repeat top center / cover;
+    min-height: 500px;
+}
+
+#carreer-foto-3 {
+    background: url('../images/funf-jahrige-diana.jpg') no-repeat top center / cover;
+    min-height: 500px;
+}
+
+#carreer-foto-4 {
+    background: url('../images/diana-piano-orchestra.jpg') no-repeat top center / cover;
+    min-height: 500px;
+    max-height: auto;
+}
+
+#carreer-foto-5 {
+    background: url('../images/uber-diana-4.jpg') no-repeat top center / cover;
+    min-height: 500px;
+}
+
+#carreer-foto-6 {
+    background: url('../images/uber-diana-3.jpg') no-repeat top center / cover;
+    min-height: 500px;
+}
+
+#carreer-foto-7 {
+    background: url('../images/ubermich-7.jpg') no-repeat top center / cover;
+    min-height: 500px;
+}
+
+#carreer-foto-8 {
+    background: url('../images/dianas-vater.jpg') no-repeat left center / cover;
+    min-height: 300px;
+} */
+
+/* Relevant-Info Section */
+/* About Page */
+#about-relevant-info {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+/* Footer */
+footer * {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: var(--secondary-font);
+}
+
+#socials i {
+    font-size: 2rem;
+    transition: 0.2s ease-in-out;
+}
+
+#nav-links a
+{
+    font-size: 1.25rem;
+    transition: 0.2s ease-in-out;
+}
+
+footer #socials i:hover,
+footer #nav-links a:hover {
+    color: var(--highlight-secondary-color);
+}
+
+footer #socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer #contact {
+    display: flex;
+    justify-content: end;
+}
+
+footer #nav-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer #address i {
+    color: var(--highlight-secondary-color);
+    padding-right: 1rem;
+}
+
+footer #contact i {
+    background-color: transparent;
+}
+
+/* Media queries */
+
+
+/* Small devices (mobile, 576px and up*/
+@media screen and (min-width: 576px) {
+    .custom-btn {
+        font-size: 1.25rem;
+    }
+
+    /* Navigation */
+    #logo {
+        height: 3rem;
+    }
+
+    #menu-icon {
+        height: 2rem;
+    }
+
+    /* Main */
+    main {
+        padding-top: 80px;
+    }
+
+    /* Services Section */
+    #hero-intro {
+        padding: 1.5rem 1.5rem 0 1.5rem;
+    }
+
+    #home-logo {
+        width: 500px;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up*/
+@media screen and (min-width: 768px) {
+
+    /* Navigation */
+    #logo {
+        height: 4.5rem;
+    }
+
+    #home-logo {
+        width: 570px;
+    }
+
+    #menu-icon {
+        height: 2.5rem;
+    }
+
+    /* Main */
+
+    main {
+        padding-top: 104px;
+    }
+
+    /* Hero Section */
+    #hero-intro {
+        padding: 0;
+    }
+
+    #hero-image {
+        height: 335px;
+    }
+
+    #about-hero-image {
+        height: 295px;
+    }
+    
+    /* Footer */
+    footer #address,
+    footer #contact {
+        justify-content: center;
+    }
+
+    /* Sevices Section */
+    #services .card-content p {
+        min-height: 130px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+}
+
+/* Large devices (small laptops, 992px and up*/
+@media screen and (min-width: 992px) {
+    #links {
+        transform: translateX(0); /* Start off-screen */
+        transition: transform 0;
+    }
+
+    .custom-btn {
+        font-size: 1.5rem;
+    }
+
+    /* Navigation */
+    #toggle-menubar-btn {
+        display: none;
+    }
+
+    #links {
+        display: block;
+        position: static;
+        align-items: center;
+        height: auto;
+    }
+
+    nav ul {
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-end;
+        padding-bottom: auto;
+    }
+
+    #links a {
+        transition: ease-in-out 0.3s;
+    }
+
+    /* Styles for static navbar links */
+    #links .about-link:hover, 
+    #links .about-link-active {
+        background-color: var(--highlight-tertiary-color);
+        color: var(--primary-color);
+    }
+    
+    #links .coaching-link:hover, 
+    #links .coaching-link-active {
+        background-color: var(--highlight-primary-color);
+        color: var(--primary-color);
+    }
+    
+    #links .booking-link:hover, 
+    #links .booking-link-active {
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+    }
+    
+    #links .contact-link:hover, 
+    #links .contact-link-active {
+        background-color: var(--highlight-secondary-color);
+        color: var(--primary-color);
+    }
+
+    /* Main */
+    main {
+        padding-top: 130px;
+    }
+
+    /* Hero Section */
+    #hero-image {
+        height: 450px;
+    }
+    
+    #home-logo {
+        width: 700px;
+    }
+
+    /* Services Section */
+    #services .card-content p {
+        min-height: 130px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    #services .custom-row {
+        max-width: 80%;
+    }
+
+}
+
+/* Extra large devices (laptops, 1400px and up*/
+@media screen and (min-width: 1400px) {
+    /* Hero */
+    #home-logo {
+        width: 1000px;
+    }
+
+    /* Main */
+    p {
+        font-size: 1.25rem;
+    }
+    /* Services Section */
+    #services .card-content p {
+        min-height: 100px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+      /* Footer */
+      #address {
+        font-size: 1.25rem;
+    }
+
+    #cd {
+        width: 150px;
+        height: 150px;
+    }
+
+
+}

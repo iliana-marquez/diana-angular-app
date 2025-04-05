@@ -1,1 +1,40 @@
-<p class="text-danger">navbar works!</p>
+<header>
+    <div class="nav-container">
+      <!-- Logo / Home Link -->
+      <div class="static-navbar">
+        <a routerLink="/">
+          <img id="logo" class="scrolled" src="assets/images/logo.png" alt="Diana Vizvary">
+        </a>
+      </div>
+  
+      <!-- Nav Section -->
+      <nav [ngClass]="{ 'show': isMenuOpen }" id="links">
+        <ul class="static d-flex align-items-end">
+          <li><a routerLink="/about" class="about-link text-nowrap">Über mich</a></li>
+  
+          <div class="dropdown contact-link">
+            <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              PROFIL
+            </button>
+            <ul class="dropdown-menu">
+              <li><a routerLink="#" class="dropdown-item">Kurltur Aktivistin</a></li>
+              <li><a routerLink="#" class="dropdown-item">Pianistin</a></li>
+              <li><a routerLink="#" class="dropdown-item">Sängerin</a></li>
+              <li><a routerLink="#" class="dropdown-item">Sprächerin</a></li>
+              <li><a routerLink="#" class="dropdown-item">Coach</a></li>
+            </ul>
+          </div>
+  
+          <li><a routerLink="/reflexionen" class="booking-link">Reflexionen</a></li>
+          <li><a routerLink="/contact" class="contact-link">Kontakt</a></li>
+        </ul>
+      </nav>
+  
+      <!-- Toggle Button -->
+      <div class="toggle"  id="toggle-menubar-btn" (click)="toggleMenu()">
+        <img id="menu-icon" [src]="isMenuOpen ? 'assets/icons/asterisk-icon.png' : 'assets/icons/burger-icon.png'"
+             [ngClass]="{ rotated: isMenuOpen }"
+             alt="Toggle button to display the dropdown menu">
+      </div>
+    </div>
+  </header>
