@@ -315,10 +315,10 @@ p {
     width: 100%;
 }
 
-/* #about-hero-image {
-    background: url('../images/diana-about-hero-pic.png') no-repeat bottom center / contain;
+#about-hero-image {
+    background: url('assets/images/diana-about-hero-pic.png') no-repeat bottom center / contain;
     height: 400px;
-} */
+}
 
 #home-logo {
     width: 300px;
@@ -345,41 +345,41 @@ p {
     --bs-gutter-x: 0.5rem;
 }
 
-/* #carreer-foto-2 {
-    background: url('../images/baby-diana.jpg') no-repeat top center / cover;
+#carreer-foto-2 {
+    background: url('assets/images/baby-diana.jpg') no-repeat top center / cover;
     min-height: 500px;
 }
 
 #carreer-foto-3 {
-    background: url('../images/funf-jahrige-diana.jpg') no-repeat top center / cover;
+    background: url('assets/images/funf-jahrige-diana.jpg') no-repeat top center / cover;
     min-height: 500px;
 }
 
 #carreer-foto-4 {
-    background: url('../images/diana-piano-orchestra.jpg') no-repeat top center / cover;
+    background: url('assets/images/diana-piano-orchestra.jpg') no-repeat top center / cover;
     min-height: 500px;
     max-height: auto;
 }
 
 #carreer-foto-5 {
-    background: url('../images/uber-diana-4.jpg') no-repeat top center / cover;
+    background: url('assets/images/uber-diana-4.jpg') no-repeat top center / cover;
     min-height: 500px;
 }
 
 #carreer-foto-6 {
-    background: url('../images/uber-diana-3.jpg') no-repeat top center / cover;
+    background: url('assets/images/uber-diana-3.jpg') no-repeat top center / cover;
     min-height: 500px;
 }
 
 #carreer-foto-7 {
-    background: url('../images/ubermich-7.jpg') no-repeat top center / cover;
+    background: url('assets/images/ubermich-7.jpg') no-repeat top center / cover;
     min-height: 500px;
 }
 
 #carreer-foto-8 {
-    background: url('../images/dianas-vater.jpg') no-repeat left center / cover;
+    background: url('assets/images/dianas-vater.jpg') no-repeat left center / cover;
     min-height: 300px;
-} */
+}
 
 /* Relevant-Info Section */
 /* About Page */
