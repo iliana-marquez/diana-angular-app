@@ -377,8 +377,16 @@ p {
 }
 
 #carreer-foto-8 {
-    background: url('assets/images/dianas-vater.jpg') no-repeat left center / cover;
-    min-height: 300px;
+    background: url('assets/images/dianas-vater.jpg') no-repeat bottom center / cover;
+    border: solid 3px var(--highlight-secondary-color);
+    min-height: 600px;
+    max-width: 400px;
+}
+
+.overlay {
+    background-color: var(--highlight-secondary-color);
+    font-size: 0.8rem;
+    color: var(--primary-color);
 }
 
 /* Relevant-Info Section */
