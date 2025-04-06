@@ -26,6 +26,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: var(--tertiary-font);
+    font-weight: 200;
 }
 
 a {
@@ -378,6 +379,15 @@ p {
 #carreer-foto-7 {
     background: url('assets/images/ubermich-7.jpg') no-repeat top center / cover;
     min-height: 500px;
+}
+
+.ps {
+    border-top: solid 2px var(--highlight-secondary-color);
+    padding-top: 1rem;
+}
+
+.ps-color {
+    color: var(--highlight-secondary-color);
 }
 
 #carreer-foto-8 {
