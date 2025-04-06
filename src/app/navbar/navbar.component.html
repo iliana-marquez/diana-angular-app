@@ -2,7 +2,7 @@
     <div class="nav-container">
       <!-- Logo / Home Link -->
       <div class="static-navbar">
-        <a routerLink="home">
+        <a routerLink="/home"(click)="closeMenu()">
           <img id="logo"  [ngClass]="{
             'scrolled': !isHomePage && hasScrolled || (isHomePage && hasScrolled)
           }" src="assets/images/logo.png" alt="Diana Vizvary">
@@ -12,23 +12,23 @@
       <!-- Nav Section -->
       <nav [ngClass]="{ 'show': isMenuOpen }" id="links">
         <ul class="static d-flex align-items-end">
-          <li><a routerLink="/about" class="about-link text-nowrap">Über mich</a></li>
+          <li><a routerLink="/about" (click)="closeMenu()" class="about-link text-nowrap">Über mich</a></li>
   
           <div class="dropdown contact-link">
             <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               PROFIL
             </button>
             <ul class="dropdown-menu">
-              <li><a routerLink="#" class="dropdown-item">Kurltur Aktivistin</a></li>
-              <li><a routerLink="#" class="dropdown-item">Pianistin</a></li>
-              <li><a routerLink="#" class="dropdown-item">Sängerin</a></li>
-              <li><a routerLink="#" class="dropdown-item">Sprächerin</a></li>
-              <li><a routerLink="#" class="dropdown-item">Coach</a></li>
+              <li><a routerLink="#" (click)="closeMenu()" class="dropdown-item">Kurltur Aktivistin</a></li>
+              <li><a routerLink="#" (click)="closeMenu()" class="dropdown-item">Pianistin</a></li>
+              <li><a routerLink="#" (click)="closeMenu()" class="dropdown-item">Sängerin</a></li>
+              <li><a routerLink="#" (click)="closeMenu()" class="dropdown-item">Sprächerin</a></li>
+              <li><a routerLink="#" (click)="closeMenu()" class="dropdown-item">Coach</a></li>
             </ul>
           </div>
   
-          <li><a routerLink="/reflexionen" class="booking-link">Reflexionen</a></li>
-          <li><a routerLink="/contact" class="contact-link">Kontakt</a></li>
+          <li><a routerLink="/reflexionen" (click)="closeMenu()" class="booking-link">Reflexionen</a></li>
+          <li><a routerLink="/contact" (click)="closeMenu()" class="contact-link">Kontakt</a></li>
         </ul>
       </nav>
   
@@ -39,4 +39,4 @@
              alt="Toggle button to display the dropdown menu">
       </div>
     </div>
-  </header>
+</header>

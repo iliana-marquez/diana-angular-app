@@ -32,6 +32,12 @@ export class NavbarComponent implements OnInit {
     this.isMenuOpen = !this.isMenuOpen;
   }
 
+  closeMenu() {
+    if (window.innerWidth < 992) { 
+      this.isMenuOpen = false;
+    }
+  }
+
   // Check if the current route is home
   private setHomePageStatus() {
     this.isHomePage = this.router.url === '/' || this.router.url === '/home';
