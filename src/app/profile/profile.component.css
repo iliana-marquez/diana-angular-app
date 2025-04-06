@@ -2,6 +2,18 @@
     min-height: 290px;
     border-radius: 2.5rem;
     background-color: var(--highlight-primary-color);
+    position: relative;
+    z-index: 0;
+}
+
+h2 {
+    text-align: end;
+}
+
+h3 {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    text-align: center;
 }
 
 p {
@@ -27,6 +39,9 @@ p {
 
 @media screen and (min-width: 768px) {
 
+    h3 {
+        font-size: 1.5rem;
+    }
     .carousel-item {
         min-height: 550px;
     }
@@ -38,6 +53,15 @@ p {
 }
 
 @media screen and (min-width: 992px) {
+    h2 {
+        text-align: start;
+    }
+    
+    h3 {
+        text-align: start;
+    }
+
+    
     .carousel-item {
         min-height: 370px;
     }
