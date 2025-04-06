@@ -1,0 +1,25 @@
+.my-card {
+    border: solid 2px var(--highlight-secondary-color);
+    padding: 1rem;
+    max-width: 80vw;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .phrase {
+    color: var(--secondary-color);
+  }
+  
+  .author {
+    color: var(--highlight-primary-color);
+  }
+  
+  /* Default state (no rotation) */
+  .my-card {
+    transform: perspective(500px) rotateX(0deg);
+  }
+  
+  /* Rotation effect when class is added */
+  .my-card.rotate-x {
+    transform: perspective(500px) rotateX(45deg);
+  }
