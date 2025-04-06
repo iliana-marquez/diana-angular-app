@@ -4,17 +4,7 @@ span {
     text-transform: none;
 }
 
-.contact-middle-links {
-    transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out; /* Smooth transition for transform and font size */
-  }
-  
-  .contact-middle-links:hover {
-    transform: scale(1.5) translateY(-30px); /* Slightly enlarges the whole link (icon + text) */
-  }
-
 /* Media queries */
-
-
 /* Small devices (mobile, 576px and up*/
 @media screen and (min-width: 576px) {
     span {
@@ -32,6 +22,15 @@ span {
     span {
         font-size: 0.9rem;
     }
+    .contact-middle-links {
+        transition: transform 0.4s ease-in-out, font-size 0.4s ease-in-out; 
+    }
+    
+    .contact-middle-links:hover, 
+    .contact-middle-links span:hover {
+        transform: scale(1.2);
+        color: var(--highlight-secondary-color);
+    }
 }
 
 /* Extra large devices (laptops, 1400px and up*/
@@ -39,6 +38,11 @@ span {
  
     span {
         font-size: 1rem;
+    }
+    .contact-middle-links:hover, 
+    .contact-middle-links span:hover {
+        transform: scale(1.1);
+        color: var(--highlight-secondary-color);
     }
 
 }
