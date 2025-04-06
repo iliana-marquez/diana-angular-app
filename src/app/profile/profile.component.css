@@ -1,0 +1,71 @@
+.carousel-item {
+    min-height: 290px;
+    border-radius: 2.5rem;
+    background-color: var(--highlight-primary-color);
+}
+
+p {
+    color: var(--secondary-color);
+}
+
+.profiles,
+.media {
+    max-width: 98vw;
+}
+
+@media screen and (min-width: 576px) {
+
+    .carousel-item {
+        min-height: 400px;
+    }
+
+    .profiles,
+    .media {
+    max-width: 75vw;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .carousel-item {
+        min-height: 550px;
+    }
+
+    .profiles,
+    .media {
+    max-width: 75vw;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .carousel-item {
+        min-height: 370px;
+    }
+
+    .profiles,
+    .media {
+    max-width: 80vw;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .carousel-item {
+        min-height: 450px;
+    }
+
+    .profiles,
+    .media {
+    max-width: 75vw;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .carousel-item {
+        min-height: 500px;
+    }
+
+    .profiles,
+    .media {
+    max-width: 75vw;
+    }
+}
