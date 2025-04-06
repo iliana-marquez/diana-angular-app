@@ -28,6 +28,10 @@
     font-family: var(--tertiary-font);
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Titles */
 .coursive-title {
     font-family: var(--primary-font);
@@ -378,7 +382,7 @@ p {
 
 #carreer-foto-8 {
     background: url('assets/images/dianas-vater.jpg') no-repeat top center / cover;
-    filter: grayscale(100%);
+    border: solid 5px var(--primary-color);
     min-height: 350px;
 }
 
@@ -386,6 +390,8 @@ p {
     background-color: var(--highlight-secondary-color);
     font-size: 0.8rem;
     color: var(--primary-color);
+    border-left: solid 16px var(--primary-color);
+    border-right: solid 16px var(--primary-color);
 }
 
 /* Relevant-Info Section */
@@ -616,6 +622,11 @@ footer #contact i {
         max-width: 80%;
     }
 
+    /* About Section */
+    .father-section {
+        border-left: solid 50px var(--primary-color);
+        border-right: solid 50px var(--primary-color);
+    }
 }
 
 /* Extra large devices (laptops, 1400px and up*/
@@ -636,8 +647,14 @@ footer #contact i {
         margin-bottom: 0;
     }
 
-      /* Footer */
-      #address {
+    /* About Section */
+    .father-section {
+        border-left: solid 100px var(--primary-color);
+        border-right: solid 100px var(--primary-color);
+    }
+    
+    /* Footer */
+    #address {
         font-size: 1.25rem;
     }
 
