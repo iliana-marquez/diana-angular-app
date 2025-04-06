@@ -12,7 +12,13 @@ export class NavbarComponent implements OnInit {
   isHomePage: boolean = false;
   hasScrolled: boolean = false; // To track whether user has scrolled on home page
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) { }
+
+  goHome(): void {
+    this.router.navigate(['/home']).then(() => {
+      window.location.reload(); // Reload the page after navigating
+    });
+  }
 
   ngOnInit(): void {
     // Check route on initialization
