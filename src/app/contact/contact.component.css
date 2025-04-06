@@ -1,3 +1,7 @@
 .modal-font {
     color: var(--primary-color);
 }
+
+.spinner {
+    background-color: var(--primary-color);
+}

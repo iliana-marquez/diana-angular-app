@@ -30,8 +30,12 @@ export class ContactComponent  implements OnInit, AfterViewInit {
     }
   }
 
+  public isSendingEmail: boolean = false; 
   public sendEmail(e: Event): void {
     e.preventDefault(); // Prevent default form submission
+
+    // Show the spinner before sending the email
+    this.isSendingEmail = true;
 
     // Send email using EmailJS
     emailjs
@@ -46,19 +50,24 @@ export class ContactComponent  implements OnInit, AfterViewInit {
       )
       .then(
         () => {
-           // Trigger Bootstrap modal using JS
-  const modalElement = document.getElementById('successModal');
-  if (modalElement) {
-    const modal = new (window as any).bootstrap.Modal(modalElement);
-    modal.show();
+          // Stop spinner when modal opens
+          this.isSendingEmail = false;
 
-    // Optional: Redirect after a short delay (e.g., 3s)
-    setTimeout(() => {
-      modal.hide();
-      window.location.href = '/';
-    }, 3000); }
+          // Trigger Bootstrap modal using JS
+          const modalElement = document.getElementById('successModal');
+          if (modalElement) {
+           const modal = new (window as any).bootstrap.Modal(modalElement);
+          modal.show();
+
+          // Optional: Redirect after a short delay (e.g., 3s)
+          setTimeout(() => {
+            modal.hide();
+            window.location.href = '/';
+          }, 3000); }
         },
         (error) => {
+          // Hide the spinner if there's an error
+          this.isSendingEmail = false;
           alert('Ein Fehler ist passiert, bitte versuche es später.');
           (e.target as HTMLFormElement).reset(); // Optional: reset the form
           window.location.href = '/';

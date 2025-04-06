@@ -35,20 +35,28 @@
                     </div>
                 </div>
             </form>
+            <!-- Spinner for loading -->
+            <div *ngIf="isSendingEmail" class="spinner d-flex justify-content-center mb-3">
+                <div class="spinner-border text-light" role="status">
+                   <span class="visually-hidden">Sending...</span>
+                </div>
+            </div>
         </div>
     </section>
 
+
+    
+
     <!-- Success Modal -->
-<div class="modal fade modal-font" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content text-center p-3 rounded-4">
-        <div class="modal-header border-0">
+    <div class="modal fade modal-font" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-center p-3 rounded-4">
+          <div class="modal-header border-0">
           <h5 class="modal-title" id="successModalLabel">Danke für deine Nachricht!</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
         </div>
         <div class="modal-body">
           <p class="mb-4">Ich melde mich so bald wie möglich bei dir.</p>
-          <a routerLink="/" class="btn-hl-tertiary-color">Ok, gemma' Home</a>
         </div>
       </div>
     </div>
