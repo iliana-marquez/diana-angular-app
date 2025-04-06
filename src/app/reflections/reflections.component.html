@@ -1,39 +1,15 @@
 <main>
 
     <div class="row g-2">
-        <div class="col-12 d-flex justify-content-center text-center">
-          <div [ngClass]="{'rotate-x': isRotated}" class="my-card">
+        <div *ngFor="let quote of quotes" class="col-12 d-flex justify-content-center text-center">
+          <div class="my-card">
             <p class="phrase">
-              <i>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore aspernatur id exercitationem libero quis non suscipit dignissimos. Similique rem laudantium pariatur! Facilis odit accusamus accusantium consequatur ipsa non placeat magnam."</i>
+              <i>{{ quote.phrase }}</i>
             </p>
-            <p class="author">Pablo Picasso</p>
+            <p class="author">{{ quote.author }}</p>
           </div>
-        </div>
-        <div class="col-12 d-flex justify-content-center text-center">
-            <div [ngClass]="{'rotate-x': isRotated}" class="my-card">
-              <p class="phrase">
-                <i>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore aspernatur id exercitationem libero quis non suscipit dignissimos. Similique rem laudantium pariatur! Facilis odit accusamus accusantium consequatur ipsa non placeat magnam."</i>
-              </p>
-              <p class="author">Pablo Picasso</p>
-            </div>
-          </div>
-          <div class="col-12 d-flex justify-content-center text-center">
-            <div [ngClass]="{'rotate-x': isRotated}" class="my-card">
-              <p class="phrase">
-                <i>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore aspernatur id exercitationem libero quis non suscipit dignissimos. Similique rem laudantium pariatur! Facilis odit accusamus accusantium consequatur ipsa non placeat magnam."</i>
-              </p>
-              <p class="author">Pablo Picasso</p>
-            </div>
-          </div>
-          <div class="col-12 d-flex justify-content-center text-center">
-            <div [ngClass]="{'rotate-x': isRotated}" class="my-card">
-              <p class="phrase">
-                <i>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore aspernatur id exercitationem libero quis non suscipit dignissimos. Similique rem laudantium pariatur! Facilis odit accusamus accusantium consequatur ipsa non placeat magnam."</i>
-              </p>
-              <p class="author">Pablo Picasso</p>
-            </div>
-          </div>
-      </div>
+        </div>        
+    </div>
 
     
 </main>
