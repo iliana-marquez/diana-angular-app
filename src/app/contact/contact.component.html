@@ -7,35 +7,51 @@
                 <p class="secondary-color-title"><i>Wenn ich Dich in irgendeiner Weise angesprochen habe, freue ich mich, von dir zu hören</i><p>
             </div>
 
-            <form class="sharp-corners pb-4 px-lg-5 px-xl-6" action="" method="">
+            <form class="sharp-corners pb-4 px-lg-5 px-xl-6"  (submit)="sendEmail($event)" method="POST">
                 <div class="row">
                     <div class="col-12 col-lg-6 mb-3">
-                        <label for="name" class="form-label secondary-color-title">Name:</label>
+                        <label for="name" class="form-label secondary-color-title">*Name:</label>
                         <input class="form-control" id="name" name="name" type="text" required>
                     </div>
                     <div class="col-12 col-lg-6 mb-3">
-                        <label for="email" class="form-label secondary-color-title">Email:</label>
-                        <input class="form-control" id="email" name="email" type="email" required>
+                        <label for="email" class="form-label secondary-color-title">*Email:</label>
+                        <input class="form-control" id="email" name="reply_to" type="email" required>
                     </div>
                     <div class="col-12 col-lg-6 mb-3">
-                        <label for="subject" class="form-label secondary-color-title">Subject:</label>
+                        <label for="subject" class="form-label secondary-color-title">*Betreff:</label>
                         <input class="form-control" id="subject" name="subject" type="text" required>
                     </div>
                     <div class="col-12 col-lg-6 mb-3">
-                        <label for="phone" class="form-label secondary-color-title">Phone number (optional):</label>
+                        <label for="phone" class="form-label secondary-color-title">Telefonnumer:</label>
                         <input class="form-control" id="phone" name="phone" type="number">
                     </div>
                     <div class="col-12 mb-3">
-                        <label for="message" class="form-label secondary-color-title">Message:</label>
+                        <label for="message" class="form-label secondary-color-title">*Nachricht:</label>
                         <textarea class="form-control" rows="6" id="message" name="message" required></textarea>
                     </div>
                     <div class="col-12 mb-3 text-center">
                         <!-- Button trigger modal -->
-                        <button type="submit" class="custom-btn btn-hl-tertiary-color">Send</button>
+                        <button type="submit" class="custom-btn btn-hl-tertiary-color">senden</button>
                     </div>
                 </div>
             </form>
         </div>
     </section>
+
+    <!-- Success Modal -->
+<div class="modal fade modal-font" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content text-center p-3 rounded-4">
+        <div class="modal-header border-0">
+          <h5 class="modal-title" id="successModalLabel">Danke für deine Nachricht!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
+        </div>
+        <div class="modal-body">
+          <p class="mb-4">Ich melde mich so bald wie möglich bei dir.</p>
+          <a routerLink="/" class="btn-hl-tertiary-color">Ok, gemma' Home</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </main>
