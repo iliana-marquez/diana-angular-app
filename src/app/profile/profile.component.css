@@ -17,6 +17,9 @@ p {
     max-width: 98vw;
 }
 
+.media-samples p {
+    font-size: 0.8rem;
+}
 
 /* Carousel for profile pics display */
 .carousel-item.profile-pictures {
