@@ -33,6 +33,10 @@ a {
     text-decoration: none;
 }
 
+.small-text {
+    font-size: 0.75rem;
+}
+
 /* Titles */
 .coursive-title {
     font-family: var(--primary-font);
@@ -328,6 +332,26 @@ p {
 
 #home-logo {
     width: 300px;
+}
+
+.contact-inline {
+    position: relative; 
+    display: inline-block;
+}
+
+.contact-inline::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; 
+    height: 0.1px;
+    background-color: var(--highlight-secondary-color); 
+    transition: width 0.3s ease-in-out; 
+}
+
+.contact-inline:hover::after {
+    width: 100%; 
 }
 
 /* Services(CD) Section */
