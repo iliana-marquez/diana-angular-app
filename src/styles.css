@@ -255,7 +255,7 @@ nav ul {
     z-index: 1000;
     height: 100vh;
     transform: translateX(100%); /* Start off-screen */
-    transition: transform 0.4s ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 
 #links.show {
@@ -279,6 +279,14 @@ nav ul {
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
+#links a,
+.dropdown {
+    transition: ease-in-out 0.4s;
+}
+
+#links .navbar-link:hover{
+    background-color: var(--highlight-secondary-color);
+}
 /* Make hero logo larger */
 #home-logo {
     transition: opacity 0.5s ease, transform 0.5s ease;
@@ -601,35 +609,6 @@ footer #contact i {
         flex-flow: row;
         justify-content: flex-end;
         padding-bottom: auto;
-    }
-
-    #links a {
-        transition: ease-in-out 0.3s;
-    }
-
-    /* Styles for static navbar links */
-    #links .about-link:hover, 
-    #links .about-link-active {
-        background-color: var(--highlight-tertiary-color);
-        color: var(--primary-color);
-    }
-    
-    #links .coaching-link:hover, 
-    #links .coaching-link-active {
-        background-color: var(--highlight-primary-color);
-        color: var(--primary-color);
-    }
-    
-    #links .booking-link:hover, 
-    #links .booking-link-active {
-        background-color: var(--secondary-color);
-        color: var(--primary-color);
-    }
-    
-    #links .contact-link:hover, 
-    #links .contact-link-active {
-        background-color: var(--highlight-secondary-color);
-        color: var(--primary-color);
     }
 
     /* Main */

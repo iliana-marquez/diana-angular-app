@@ -12,9 +12,9 @@
       <!-- Nav Section -->
       <nav [ngClass]="{ 'show': isMenuOpen }" id="links">
         <ul class="static d-flex align-items-end">
-          <li><a routerLink="/about" (click)="closeMenu()" class="about-link text-nowrap">Über mich</a></li>
+          <li><a routerLink="/about" (click)="closeMenu()" class="navbar-link text-nowrap">Über mich</a></li>
   
-          <div class="dropdown contact-link">
+          <div class="dropdown navbar-link">
             <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               PROFIL
             </button>
@@ -27,8 +27,8 @@
             </ul>
           </div>
   
-          <li><a routerLink="/reflections" (click)="closeMenu()" class="booking-link">Reflexionen</a></li>
-          <li><a routerLink="/contact" (click)="closeMenu()" class="contact-link">Kontakt</a></li>
+          <li><a routerLink="/reflections" (click)="closeMenu()" class="navbar-link">Reflexionen</a></li>
+          <li><a routerLink="/contact" (click)="closeMenu()" class="navbar-link">Kontakt</a></li>
         </ul>
       </nav>
   
