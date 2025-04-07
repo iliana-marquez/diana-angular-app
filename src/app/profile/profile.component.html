@@ -39,7 +39,7 @@
     <!-- Media -->
     <section class="container profiles pb-4">
         <div class="row">
-            <div class="col-12 pb-3">
+            <div class="col-12 pb-3 text-center">
                 <h2 class="block-title hl-secondary-color-title pb-3 text-center">Media</h2>
             </div>
             <div class="col-12 col-lg-4">
@@ -47,12 +47,13 @@
                 <div id="audioCarousel" class="carousel slide">
                     <div class="carousel-inner media-card">
                       <div class="media-samples carousel-item active">
-                        <div class="carousel-caption d-block">
-                          <div class="d-flex flex-column align-items-center justify-content-center">
-                            <i class="fa-solid fa-play"></i>
-                            <p class="mb-0 pt-2">Title1</p>
-                            <p class="mb-0">Author</p>
+                        <div class="carousel-caption">
+                          <div class="d-flex flex-column align-items-center justify-content-center" (click)="toggleAudio(audioElementRef.nativeElement, $event)">
+                            <i class="fa-solid" [ngClass]="isPlaying ? 'fa-pause' : 'fa-play'"></i>
+                            <p class="mb-0 pt-2">Nocturne in C sharp minor 'Lento con gran espressione', B. 49</p>
+                            <p class="mb-0">F. Chopin</p>
                           </div>
+                          <audio #audio1 src="assets/media/prueba.mp3"></audio>
                         </div>
                       </div>
                       <div class="media-samples carousel-item">
