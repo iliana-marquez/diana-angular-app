@@ -10,6 +10,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { ReflectionsComponent } from './reflections/reflections.component';
 import { ProfileComponent } from './profile/profile.component';
+import { RechtlichesComponent } from './rechtliches/rechtliches.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ProfileComponent } from './profile/profile.component';
     AboutComponent,
     ContactComponent,
     ReflectionsComponent,
-    ProfileComponent
+    ProfileComponent,
+    RechtlichesComponent
   ],
   imports: [
     BrowserModule,

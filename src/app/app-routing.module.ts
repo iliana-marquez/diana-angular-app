@@ -5,6 +5,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { ReflectionsComponent } from './reflections/reflections.component';
 import { ProfileComponent } from './profile/profile.component';
+import { RechtlichesComponent } from './rechtliches/rechtliches.component';
 
 const routes: Routes = [
   {
@@ -24,6 +25,9 @@ const routes: Routes = [
   },
   {
     path: 'profile', component: ProfileComponent
+  },
+  {
+    path: 'rechtliches', component: RechtlichesComponent
   }
 ];
 
