@@ -334,12 +334,12 @@ p {
     width: 300px;
 }
 
-.contact-inline {
+.link-inline {
     position: relative; 
     display: inline-block;
 }
 
-.contact-inline::after {
+.link-inline::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -350,7 +350,7 @@ p {
     transition: width 0.3s ease-in-out; 
 }
 
-.contact-inline:hover::after {
+.link-inline:hover::after {
     width: 100%; 
 }
 
