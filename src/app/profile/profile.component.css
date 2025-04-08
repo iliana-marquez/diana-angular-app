@@ -13,12 +13,25 @@ p {
     color: var(--secondary-color);
 }
 
+.text-justify {
+    text-align: justify;
+}
+
 .profiles {
     max-width: 98vw;
 }
 
 .media-samples p {
     font-size: 0.8rem;
+}
+
+.carousel-inner {
+    border-radius: 2.5rem;
+    border: 2px solid var(--highlight-primary-color);
+}
+
+#carousel-pic-section {
+    border-radius: 2.5rem;
 }
 
 .carousel {
@@ -29,7 +42,6 @@ p {
 .carousel-item.profile-pictures {
     min-height: 290px;
     border-radius: 2.5rem;
-    background-color: var(--highlight-primary-color);
     position: relative;
     z-index: 0;
 }
