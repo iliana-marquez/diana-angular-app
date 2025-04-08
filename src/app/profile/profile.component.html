@@ -91,10 +91,11 @@
                     <div class="carousel-inner media-card">
                       <div class="media-samples carousel-item active">
                         <div class="carousel-caption d-block">
-                          <div class="d-flex flex-column align-items-center justify-content-center">
+                          <div class="d-flex flex-column align-items-center justify-content-center" (click)="openVideoModal('../../assets/media/sample.mp4')"
+                          style="cursor: pointer;">
                             <i class="fa-solid fa-film"></i>
-                            <p class="mb-0 pt-2">Title1</p>
-                            <p class="mb-0">Author</p>
+                            <p class="mb-0 pt-2">Cielito lindo</p>
+                            <p class="mb-0">Quirino Mendoza y Cortés</p>
                           </div>
                         </div>
                       </div>
@@ -172,7 +173,18 @@
         </div>
     </section>
 
-
+    <div class="video-modal" *ngIf="showVideoModal" (click)="closeVideoModal()">
+        <div class="video-modal-content" (click)="$event.stopPropagation()">
+          <button class="btn-close" (click)="closeVideoModal()" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+          <video
+            *ngIf="selectedVideoUrl"
+            [src]="selectedVideoUrl"
+            controls
+            autoplay
+            class="video-player"
+          ></video>
+        </div>
+    </div>
     
 
 </main>

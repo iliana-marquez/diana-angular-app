@@ -21,6 +21,10 @@ p {
     font-size: 0.8rem;
 }
 
+.carousel {
+    z-index: 0;
+}
+
 /* Carousel for profile pics display */
 .carousel-item.profile-pictures {
     min-height: 290px;
@@ -38,6 +42,7 @@ button {
     border: solid 2px var(--highlight-primary-color);
     border-radius: 2.5rem;
     margin-bottom: 1rem;
+    z-index: 0;
 }
 
 /* Carousel for profile pics display */
@@ -49,7 +54,7 @@ button {
 }
 
 
-i {
+.media-samples i {
     color: var(--highlight-secondary-color);
     padding: 1.5rem;
     font-size: 1.5rem;
@@ -66,7 +71,6 @@ i {
 .rotating {
     animation: spin 8s linear infinite;
 }
-
   
 @keyframes spin {
     from {
@@ -77,6 +81,59 @@ i {
     }
 }
 
+
+/* Video Player Styling */
+.video-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.85);  
+    z-index: 1050; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .video-modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    border: solid 2px var(--highlight-secondary-color);
+    border-radius: 2.5rem;
+  }
+  
+  .video-player {
+    width: 100%;
+    height: auto;
+    border-radius: 2.5rem;
+  }
+  
+  .btn-close {
+    position: absolute;
+    right: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: black;
+    font-size: 1.5rem;
+    z-index: 1100;
+    cursor: pointer;
+    color: var(--highlight-secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(18px, -11px);
+    opacity: 1;
+    border: solid 2px var(--highlight-secondary-color);
+  }
+
+  .btn-close:hover {
+    border: solid 2px var(--highlight-secondary-color);
+    opacity: 1;
+  }
+
+  
 
 @media screen and (min-width: 576px) {
 
