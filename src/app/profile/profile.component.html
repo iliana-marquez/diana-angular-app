@@ -8,10 +8,8 @@
                 <div id="picturesCarousel" class="carousel slide">
                     <div class="carousel-inner">
                         <div class="carousel-item profile-pictures active">
-                            <img src="assets/images/uber-diana-4.jpg" class="d-block w-100" alt="">
-                        </div>
-                        <div class="carousel-item profile-pictures">
-                            <img src="assets/images/uber-diana-3.jpg" class="d-block w-100" alt="">
+                              <!-- profile.img[i] src="(just a place holder at the moment)"-->
+                            <img src="assets/images/uber-diana-4.jpg" class="d-block w-100" alt="profile.img.alt[i]">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#picturesCarousel" data-bs-slide="prev">
@@ -28,12 +26,12 @@
 
             <!-- Titles and Subtitles  -->
             <div class="col-12 col-lg-6 profile-title py-2">
-                <h2 id="profile-title" class="block-title hl-secondary-color-title pb-3">Kultur Aktivistin</h2>
-                <h3>Subtitle</h3>
+                <h2 id="profile-title" class="block-title hl-secondary-color-title pb-3">profile.title</h2>
+                <h3>profile.subtitle</h3>
             </div>
             <!-- Text  -->
             <div class="col-12 py-2 text-justify">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, facere modi exercitationem esse provident ratione itaque. Maiores quam inventore repellendus incidunt doloribus omnis corrupti excepturi laudantium, eligendi cupiditate sed totam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, facere modi exercitationem esse provident ratione itaque. Maiores quam inventore repellendus incidunt doloribus omnis corrupti excepturi laudantium, eligendi cupiditate sed totam. <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi velit, cumque cupiditate porro voluptas libero sed! Maiores, itaque? Illo delectus enim ab sint sequi quae deserunt officia. Doloribus, voluptate perferendis!<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi velit, cumque cupiditate porro voluptas libero sed! Maiores, itaque? Illo delectus enim ab sint sequi quae deserunt officia. Doloribus, voluptate perferendis!</p>
+                    <p>profile.description</p>
             </div>
         </div>
     </section>
@@ -45,6 +43,7 @@
                 <h2 class="block-title hl-secondary-color-title pb-3 text-center">Media</h2>
             </div>
             <!-- Audio Section -->
+             <!-- iterate available audios -->
             <div class="col-12">
                 <p class="text-center m-0">AUDIO</p>
                 <div id="audioCarousel" class="carousel slide">
@@ -54,28 +53,11 @@
                           <div class="d-flex flex-column align-items-center justify-content-center" (click)="toggleAudio(audioElementRef.nativeElement, $event)"
                           style="cursor: pointer;">
                             <i class="fa-solid" [ngClass]="isPlaying ? 'fa-pause rotating' : 'fa-play'"></i>
-                            <p class="mb-0 pt-2">Nocturne in C sharp minor 'Lento con gran espressione', B. 49</p>
-                            <p class="mb-0">F. Chopin</p>
+                            <p class="mb-0 pt-2">audio.title</p>
+                            <p class="mb-0">audio.author</p>
                           </div>
+                          <!-- src=audio.src -->
                           <audio #audio1 src="assets/media/audios/prueba.mp3"></audio>
-                        </div>
-                      </div>
-                      <div class="media-samples carousel-item">
-                        <div class="carousel-caption d-block">
-                          <div class="d-flex flex-column align-items-center justify-content-center">
-                            <i class="fa-solid fa-play"></i>
-                            <p class="mb-0 pt-2">Title2</p>
-                            <p class="mb-0">Author</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="media-samples carousel-item">
-                        <div class="carousel-caption d-block">
-                          <div class="d-flex flex-column align-items-center justify-content-center">
-                            <i class="fa-solid fa-play"></i>
-                            <p class="mb-0 pt-2">Title3</p>
-                            <p class="mb-0">Author</p>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -90,6 +72,7 @@
                 </div>
             </div>
             <!-- Video Section -->
+             <!-- iterate available videos -->
             <div class="col-12 col-lg-6">
                 <p class="text-center m-0 pt-2">VIDEO</p>
                 <div id="videoCarousel" class="carousel slide">
@@ -98,27 +81,10 @@
                         <div class="carousel-caption d-block">
                           <div class="d-flex flex-column align-items-center justify-content-center" (click)="openVideoModal('../../assets/media/videos/sample.mp4')"
                           style="cursor: pointer;">
+                            <!-- url= 'video.url' -->
                             <i class="fa-solid fa-film"></i>
-                            <p class="mb-0 pt-2">Cielito lindo</p>
-                            <p class="mb-0">Quirino Mendoza y Cortés</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="media-samples carousel-item">
-                        <div class="carousel-caption d-block">
-                          <div class="d-flex flex-column align-items-center justify-content-center">
-                            <i class="fa-solid fa-film"></i>
-                            <p class="mb-0 pt-2">Title2</p>
-                            <p class="mb-0">Author</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="media-samples carousel-item">
-                        <div class="carousel-caption d-block">
-                          <div class="d-flex flex-column align-items-center justify-content-center">
-                            <i class="fa-solid fa-film"></i>
-                            <p class="mb-0 pt-2">Title3</p>
-                            <p class="mb-0">Author</p>
+                            <p class="mb-0 pt-2">video.title</p>
+                            <p class="mb-0">video.author</p>
                           </div>
                         </div>
                       </div>
@@ -141,27 +107,10 @@
                       <div class="media-samples carousel-item active">
                         <div class="carousel-caption d-block">
                           <div class="d-flex flex-column align-items-center justify-content-center">
+                            <!-- href="youtube.link" -->
                             <a target="_blank" href="https://www.youtube.com/watch?v=Les39aIKbzE&ab_channel=greatclassicrecords"><i class="fa-brands fa-youtube"></i></a>
-                            <p class="mb-0 pt-2">Adagietto Symphony 5 – Karajan:</p>
-                            <p class="mb-0">G. Mahler</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="media-samples carousel-item">
-                        <div class="carousel-caption d-block">
-                          <div class="d-flex flex-column align-items-center justify-content-center">
-                            <i class="fa-brands fa-youtube"></i>
-                            <p class="mb-0 pt-2">Title2</p>
-                            <p class="mb-0">Author</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="media-samples carousel-item">
-                        <div class="carousel-caption d-block">
-                          <div class="d-flex flex-column align-items-center justify-content-center">
-                            <i class="fa-brands fa-youtube"></i>
-                            <p class="mb-0 pt-2">Title3</p>
-                            <p class="mb-0">Author</p>
+                            <p class="mb-0 pt-2">youtube.title</p>
+                            <p class="mb-0">youtube.author</p>
                           </div>
                         </div>
                       </div>
