@@ -43,3 +43,5 @@ Thumbs.db
 
 # Ignore environment files
 src/environments/src/assets/media/sample.mp4
+src/environments/environment.prod.ts
+src/environments/environment.ts
