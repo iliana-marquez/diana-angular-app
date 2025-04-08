@@ -206,7 +206,7 @@ button {
 }
 
 @media screen and (min-width: 1400px) {
-    .carousel-item {
+    .carousel-item.profile-pictures img {
         height: 500px;
     }
 
