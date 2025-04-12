@@ -2,6 +2,79 @@ import { IProfile } from './iprofile';
 
 export const PROFILES: IProfile[] = [
   {
+    id: 'kulturaktivistin',
+    title: 'Kunst- & Kultur Aktivistin',
+    subtitle: 'Kunst als Brücke zwischen Kulturen und Menschen',
+    description: `Als Kunst- und Kulturaktivistin gründete ich den Verein 
+        "<a class="ps-color link-inline" href="https://keinekultur.art/" target="_blank" aria-label="link zur KeineKulturKunst Website">KeineKultur.Kunst</a>” – Vernetzung globaler Kulturen mit Kunst.
+        <br><br>
+        Der Verein organisiert interkulturelle Projekte und Veranstaltungen, bei denen Künstler*innen unterschiedlicher Disziplinen, Kulturen und Generationen zusammenkommen und tiefgehende Erlebnisse, wo alle Sinne angesprochen werden, erschaffen. Denn: Kunst ist eine gemeinsame Sprache, die über Herkunft, Alter und Weltanschauung hinaus verbindet. Sie schafft Raum für Begegnung, Respekt und echten Austausch.
+        <br><br>
+        Die Vision von KeineKultur.Kunst ist klar: Kunst für alle zugänglich zu machen – unabhängig von sozialen, geografischen oder kulturellen Hürden und gleichzeitig Künstler*innen aktiv zu unterstützen. Die Möglichkeit für Künstler*innen, sich in einem inspirierenden Umfeld zu präsentieren und ein interessiertes Publikum zu gewinnen, trägt nicht nur zu ihrer persönlichen und beruflichen Weiterentwicklung bei, sondern fördert auch das kulturelle Bewusstsein in den Menschen. So entsteht eine Win-Win-Situation: für die Kunstschaffenden ebenso wie für die Gesellschaft, die von einem vielfältigen, lebendigen und sinnreichen Kulturangebot profitiert.
+        <br><br>
+        Der Verein bemüht sich, die Kunst dorthin zu bringen, wo sie am meisten gebraucht wird. Lass uns gemeinsam die Grenzen zwischen Bühne und Publikum zerschmelzen und ein harmonisches sowie ganzheitliches Sinneserlebnis erschaffen.
+        <br><br>    
+        Denn: Kunst ist kein Luxus. Kunst ist lebensnotwendig!`,
+    images: [
+        { src: 'assets/images/diana-pianist-hands.jpg', alt: 'Dianas Hände am Klavier' },
+        { src: 'assets/images/diana-pianist-choir.jpg', alt: 'Diana begleitet ein Chorkonzert' },
+        { src: 'assets/images/diana-pianist-baby.jpg', alt: 'Baby Diana am Klavier' },
+        { src: 'assets/images/diana-piano-after-a-concert.jpg', alt: 'Diana glücklich nach einem Konzert mit einem Blumenstrauss vor dem Konzerthaus' }
+    ],
+    audios: [
+        { title: 'Piano Concerto no. 5 in Eb "Emperor", Op. 73 - III. Rondo_ Allegro ma non troppo', author: 'Beethoven' , src: 'assets/media/audios/L.v.Beethoven_Piano_Concerto_no.5_in_Eb _EmperorOp.73.III.Rondo_ Allegro_ma_non_troppo.mp3' },
+        { title: 'Piano Concerto no. 5 in Eb "Emperor", Op. 73 - II. Adagio un poco mosso', author: 'Beethoven', src: 'assets/media/audios/L.v.Beethoven_Piano_Concerto_no.5_in_Eb_Emperor_Op.73-II.Adagio_un_poco_mosso.mp3'},
+        { title: 'Nocturne in C sharp minor "Lento con gran espressione", B. 49 (Op. posth.)', author: 'Chopin' , src: 'assets/media/audios/F.Chopin_Nocturne_in_C_sharp_minor_Lento_con_gran_espressione_B.49.mp3' }
+    ],
+    videos: [
+        { title: 'sample1', author: 'sample1', src: 'assets/media/videos/student-feedback-kristian.mov' },
+        { title: 'sample2', author: 'sample2', src: 'assets/media/videos/sample.mp4' }
+    ],
+    youtubeLinks: [
+      { title: 'Ballade Nr.2 F-Dur', author: 'Chopin', src: 'https://www.youtube.com/watch?v=_JdcIBlp6mo' },
+      { title: 'Fantasien Op. 116, Intermezzo a-Moll', author: 'Brahms', src: 'https://www.youtube.com/watch?v=IH0ovgbZAbU' },
+      { title: '5.Klavierkonzert Es-Dur - 1.Satz', author: 'Beethoven', src: 'https://www.youtube.com/watch?v=MT91LyOgWKs' },
+      { title: '5.Klavierkonzert Es-Dur - 2.Satz', author: 'Beethoven', src: 'https://www.youtube.com/watch?v=U31EuaVfrP8'},
+      { title: '5.Klavierkonzert Es-Dur - 3.Satz', author: 'Beethoven', src: 'https://www.youtube.com/watch?v=Gv596QFpZYo'},
+    ]
+  },
+  {
+    id: 'pianistin',
+    title: 'Pianistin',
+    subtitle: 'Die Bühne – mein Resonanzraum',
+    description: `Als Pianistin durfte ich das Privileg erleben, mehrere internationale Klavierwettbewerbe zu gewinnen und europaweit in Konzerten aufzutreten - sowohl als Solistin als auch in kammermusikalischen Formationen. Doch was mich immer wieder aufs Neue berührt und erfüllt, ist die Zusammenarbeit mit Orchestern. Als Solistin gemeinsam mit einem Orchester zu spielen, ist für mich ein zutiefst bewegender Moment - kraftvoll, intensiv, fast transzendental.<br><br> 
+        Mitten im Meer der Klänge, ausgestattet mit technischem Können, künstlerischer Reife und einem offenen Herzen, taucht man ein in den Teich der Demut. Man findet sein inneres Zentrum - diesen energetischen Kern - und beginnt, aus diesem heraus zu leuchten. Man wird eins mit der Musik. Und plötzlich trägt man das ganze Orchester mit.<br><br>
+        Meine größte Stärke war immer meine enorme Energie. Doch das wurde mir erst viel später wirklich klar. Es schien, als sei ich dazu bestimmt, einen Weg voller Selbstzweifel und innerer Unsicherheit zu gehen, auf dem ich ständig gegen mich selbst kämpfte. Ich versuchte sogar  Berufe zu finden, die nichts mit Musik zu tun hatten. Doch nach kürzeren oder längeren „Abstechern“ fand ich immer wieder den Weg zurück zur Musik.<br><br>
+        Heute weiß ich, dass „Perfektion“ in jedem von uns nur auf eine ganz persönliche, „unperfekte“ Weise existiert und sich nicht messen lässt! Alles wird stark von der persönlichen Entwicklung und den gemachten Erfahrungen beeinflusst. Letztlich ist es nicht die perfekte Technik oder der makellose Klang, die uns ergreifen, sondern die Energie, die wir ausstrahlen und freisetzen.<br><br>
+        Energie ist der Schlüssel - zur Verbindung mit dem Publikum, zur Erschaffung magischer Momente, zur Berührung der Herzen.<br><br>
+        <i>„Interpretation versucht, das Unbewusste freizusetzen. Wenn man Dinge loslassen kann, von denen man nicht weiß, dass sie da sind - das Unerwartete und die Überraschungen in der Aufführung“.</i> Martha Argerich<br><br>
+        Das ist es, was die Kunst so einzigartig macht – ihre Fähigkeit zur Transzendenz.<br><br>
+        Musik ist lebendig. Sie ist die einzige Kunstart, die nur im selben Augenblick existiert und dann verschwindet. Sie ist unmittelbar und kann ohne Vorwarnung überwältigen. Ihre Wirkung ist unvergleichlich. Wenn Musik Emotionen weckt, wenn Zuhörer in einem einzigen Klang die ganze Vielfalt des Lebens spüren, dann wird die wahre Aufgabe der Kunst erfüllt: Sie bewegt, verbindet und inspiriert.<br><br>
+        <i>„Licht in die Tiefe des menschlichen Herzens senden - Künstlers Beruf“.</i> Robert Schumann`,
+    images: [
+        { src: 'assets/images/diana-pianist-hands.jpg', alt: 'Dianas Hände am Klavier' },
+        { src: 'assets/images/diana-pianist-choir.jpg', alt: 'Diana begleitet ein Chorkonzert' },
+        { src: 'assets/images/diana-pianist-baby.jpg', alt: 'Baby Diana am Klavier' },
+        { src: 'assets/images/diana-piano-after-a-concert.jpg', alt: 'Diana glücklich nach einem Konzert mit einem Blumenstrauss vor dem Konzerthaus' }
+    ],
+    audios: [
+        { title: 'Piano Concerto no. 5 in Eb "Emperor", Op. 73 - III. Rondo_ Allegro ma non troppo', author: 'Beethoven' , src: 'assets/media/audios/L.v.Beethoven_Piano_Concerto_no.5_in_Eb _EmperorOp.73.III.Rondo_ Allegro_ma_non_troppo.mp3' },
+        { title: 'Piano Concerto no. 5 in Eb "Emperor", Op. 73 - II. Adagio un poco mosso', author: 'Beethoven', src: 'assets/media/audios/L.v.Beethoven_Piano_Concerto_no.5_in_Eb_Emperor_Op.73-II.Adagio_un_poco_mosso.mp3'},
+        { title: 'Nocturne in C sharp minor "Lento con gran espressione", B. 49 (Op. posth.)', author: 'Chopin' , src: 'assets/media/audios/F.Chopin_Nocturne_in_C_sharp_minor_Lento_con_gran_espressione_B.49.mp3' }
+    ],
+    videos: [
+        { title: 'sample1', author: 'sample1', src: 'assets/media/videos/student-feedback-kristian.mov' },
+        { title: 'sample2', author: 'sample2', src: 'assets/media/videos/sample.mp4' }
+    ],
+    youtubeLinks: [
+      { title: 'Ballade Nr.2 F-Dur', author: 'Chopin', src: 'https://www.youtube.com/watch?v=_JdcIBlp6mo' },
+      { title: 'Fantasien Op. 116, Intermezzo a-Moll', author: 'Brahms', src: 'https://www.youtube.com/watch?v=IH0ovgbZAbU' },
+      { title: '5.Klavierkonzert Es-Dur - 1.Satz', author: 'Beethoven', src: 'https://www.youtube.com/watch?v=MT91LyOgWKs' },
+      { title: '5.Klavierkonzert Es-Dur - 2.Satz', author: 'Beethoven', src: 'https://www.youtube.com/watch?v=U31EuaVfrP8'},
+      { title: '5.Klavierkonzert Es-Dur - 3.Satz', author: 'Beethoven', src: 'https://www.youtube.com/watch?v=Gv596QFpZYo'},
+    ]
+  },
+  {
     id: 'pianistin',
     title: 'Pianistin',
     subtitle: 'Die Bühne – mein Resonanzraum',
