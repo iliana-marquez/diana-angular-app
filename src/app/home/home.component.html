@@ -10,9 +10,9 @@
             <img id="home-logo" class="pb-3" src="assets/images/logo.png" alt="Diana Vizváry">
           </div>  
           <div class="cta-buttons flex-row d-flex gap-3 justify-content-center justify-content-md-start">
-            <a href="about.html" class="custom-btn btn-hl-tertiary-color">Künstlerin</a>
-            <a href="coaching.html" class="custom-btn btn-hl-primary-color">Coach</a>
-            <a href="contact.html" class="custom-btn btn-hl-secondary-color">Visionärin</a>
+            <a [routerLink]="['/profile', 'pianistin']" class="custom-btn btn-hl-tertiary-color">Künstlerin</a>
+            <a [routerLink]="['/profile', 'coach']" class="custom-btn btn-hl-primary-color">Coach</a>
+            <a routerLink="#" class="custom-btn btn-hl-secondary-color">Visionärin</a>
           </div>
         </div>
         <!-- Imgage -->
