@@ -77,7 +77,6 @@ button {
 .dropdown-menu {
     background-color: var(--primary-color);
     border-radius: 0;
-    z-index: 1000;
 }
 
 .dropdown-menu  a {
@@ -262,6 +261,7 @@ nav ul {
     display: block;
     background-color: rgba(0, 0, 0, 0.9);
     transform: translateX(0);
+    padding-top: 115px;
 }
 
 nav ul {
