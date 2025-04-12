@@ -30,7 +30,7 @@ const routes: Routes = [
     path: 'rechtliches', component: RechtlichesComponent
   },
   {
-    path: 'profil/:id', // dynamic route
+    path: 'profile/:id', 
     component: ProfileComponent
   }
 ];
