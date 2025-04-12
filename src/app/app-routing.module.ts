@@ -28,6 +28,10 @@ const routes: Routes = [
   },
   {
     path: 'rechtliches', component: RechtlichesComponent
+  },
+  {
+    path: 'profil/:id', // dynamic route
+    component: ProfileComponent
   }
 ];
 
