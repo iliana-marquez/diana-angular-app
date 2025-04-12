@@ -31,6 +31,12 @@ export class ProfileComponent implements OnInit, AfterViewInit {
   scrollToMedia(): void {
     this.mediaSection.nativeElement.scrollIntoView({ behavior: 'smooth' });
   }
+// **** LOGIT TO SCROLL TO PROJECTS SECITON
+  @ViewChild('projectsSection') projectsSection!: ElementRef;
+
+  scrollToProjects(): void {
+    this.projectsSection.nativeElement.scrollIntoView({ behavior: 'smooth' });
+  }
 
 
 

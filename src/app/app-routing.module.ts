@@ -6,6 +6,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ReflectionsComponent } from './reflections/reflections.component';
 import { ProfileComponent } from './profile/profile.component';
 import { RechtlichesComponent } from './rechtliches/rechtliches.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 const routes: Routes = [
   {
@@ -32,6 +33,10 @@ const routes: Routes = [
   {
     path: 'profile/:id', 
     component: ProfileComponent
+  },
+  {
+    path: 'projects', 
+    component: ProjectsComponent
   }
 ];
 

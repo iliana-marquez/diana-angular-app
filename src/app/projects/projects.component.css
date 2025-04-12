@@ -1,0 +1,17 @@
+.accordion-button,
+.carousel-control-next, 
+.carousel-control-prev  {
+    z-index: 0;
+}
+
+.accordion-button {
+    background-color: var(--highlight-primary-color);
+}
+
+accordion-button:focus {
+    box-shadow: 0; 
+}
+
+.accordion-body {
+    background-color: var(--secondary-color);
+}
