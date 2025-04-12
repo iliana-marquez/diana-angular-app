@@ -17,6 +17,51 @@ p {
     text-align: justify;
 }
 
+.profile-nav {
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 0;  
+    border-bottom: 2px solid var(--highlight-primary-color);
+    border-top: 2px solid var(--highlight-primary-color);
+    margin-bottom: 1rem;
+}
+
+.profile-link {
+    width: 20%;
+    line-height: 1;
+    min-height: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: var(--highlight-primary-color) 2px solid;    
+}
+
+.first {
+    border-left: 0;
+}
+
+.profile-link a {
+    color: var(--secondary-color);
+    font-size: 10px;
+ 
+}
+
+.profile-link a:hover {
+    color: var(--highlight-primary-color);
+}
+
+.profile-link-active {
+    background-color: var(--highlight-primary-color);
+}
+.profile-link-active a {
+    color: var(--primary-color);
+    font-weight: 400;
+}
+
+.profile-link-active a:hover {
+    color: var(--primary-color);
+}
+
 .profiles {
     max-width: 98vw;
 }
@@ -174,6 +219,10 @@ button {
     .profiles {
     max-width: 75vw;
     }
+
+    .profile-link a {
+        font-size: 13px; 
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -187,6 +236,10 @@ button {
 
     .profiles {
     max-width: 75vw;
+    }
+
+    .profile-link a {
+        font-size: 1rem; 
     }
 }
 
