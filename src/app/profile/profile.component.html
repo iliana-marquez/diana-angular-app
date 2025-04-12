@@ -7,7 +7,7 @@
     <div class="profile-link">
       <a routerLink="/profile/pianistin">Pianistin</a>
     </div>
-    <div class="profile-link profile-link-active">
+    <div class="profile-link">
       <a routerLink="/profile/coach">Coach</a>
     </div>
     <div class="profile-link">
@@ -25,9 +25,9 @@
             <div id="carousel-pic-section" class="col-12 col-lg-6">
                 <div id="picturesCarousel" class="carousel slide">
                     <div class="carousel-inner">
-                        <div class="carousel-item profile-pictures active">
+                        <div class="carousel-item profile-pictures" *ngFor="let image of profile?.images; let i = index" [class.active]="i === 0">
                               <!-- profile.img[i] src="(just a place holder at the moment)"-->
-                            <img src="assets/images/uber-diana-4.jpg" class="d-block w-100" alt="profile.img.alt[i]">
+                            <img [src]="image.src" class="d-block w-100" [alt]="image.alt">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#picturesCarousel" data-bs-slide="prev">
@@ -44,12 +44,12 @@
 
             <!-- Titles and Subtitles  -->
             <div class="col-12 col-lg-6 profile-title py-2">
-                <h2 id="profile-title" class="block-title hl-secondary-color-title pb-3">profile.title</h2>
-                <h3>profile.subtitle</h3>
+                <h2 id="profile-title" class="block-title hl-secondary-color-title pb-3">{{ profile?.title }}</h2>
+                <h3>{{ profile?.subtitle }}</h3>
             </div>
             <!-- Text  -->
             <div class="col-12 py-2 text-justify">
-                    <p>profile.description</p>
+              <p [innerHTML]="profile?.description"></p>
             </div>
         </div>
     </section>
@@ -66,16 +66,16 @@
                 <p class="text-center m-0">AUDIO</p>
                 <div id="audioCarousel" class="carousel slide">
                     <div class="carousel-inner media-card">
-                      <div class="media-samples carousel-item active">
+                      <div  *ngFor="let audio of profile?.audios; let i = index" class="media-samples carousel-item" [class.active]="i === 0">
                         <div class="carousel-caption">
                           <div class="d-flex flex-column align-items-center justify-content-center" (click)="toggleAudio(audioElementRef.nativeElement, $event)"
                           style="cursor: pointer;">
                             <i class="fa-solid" [ngClass]="isPlaying ? 'fa-pause rotating' : 'fa-play'"></i>
-                            <p class="mb-0 pt-2">audio.title</p>
-                            <p class="mb-0">audio.author</p>
+                            <p class="mb-0 pt-2">{{ audio.title }}</p>
+                            <p class="mb-0">{{ audio.author }}</p>
                           </div>
                           <!-- src=audio.src -->
-                          <audio #audio1 src="assets/media/audios/prueba.mp3"></audio>
+                          <audio #audioElement [src]="audio.src"></audio>
                         </div>
                       </div>
                     </div>
@@ -95,14 +95,14 @@
                 <p class="text-center m-0 pt-2">VIDEO</p>
                 <div id="videoCarousel" class="carousel slide">
                     <div class="carousel-inner media-card">
-                      <div class="media-samples carousel-item active">
+                      <div  *ngFor="let video of profile?.videos; let i = index" class="media-samples carousel-item" [class.active]="i === 0">
                         <div class="carousel-caption d-block">
-                          <div class="d-flex flex-column align-items-center justify-content-center" (click)="openVideoModal('assets/media/videos/student-feedback-kristian.mov')"
+                          <div class="d-flex flex-column align-items-center justify-content-center" (click)="openVideoModal(video.src)"
                           style="cursor: pointer;">
                             <!-- url= 'video.url' -->
                             <i class="fa-solid fa-film"></i>
-                            <p class="mb-0 pt-2">video.title</p>
-                            <p class="mb-0">video.author</p>
+                            <p class="mb-0 pt-2">{{ video.title }}</p>
+                            <p class="mb-0">{{ video.author }}</p>
                           </div>
                         </div>
                       </div>
@@ -122,13 +122,13 @@
                 <p class="text-center m-0 pt-2">YOUTUBE</p>
                 <div id="linksCarousel" class="carousel slide">
                     <div class="carousel-inner media-card">
-                      <div class="media-samples carousel-item active">
+                      <div *ngFor="let yt of profile?.youtubeLinks; let i = index" class="media-samples carousel-item" [class.active]="i === 0">
                         <div class="carousel-caption d-block">
                           <div class="d-flex flex-column align-items-center justify-content-center">
                             <!-- href="youtube.link" -->
-                            <a target="_blank" href="https://www.youtube.com/watch?v=Les39aIKbzE&ab_channel=greatclassicrecords"><i class="fa-brands fa-youtube"></i></a>
-                            <p class="mb-0 pt-2">youtube.title</p>
-                            <p class="mb-0">youtube.author</p>
+                            <a target="_blank" [href]="yt.src"><i class="fa-brands fa-youtube"></i></a>
+                            <p class="mb-0 pt-2">{{ yt.title }}</p>
+                            <p class="mb-0">{{ yt.author }}</p>
                           </div>
                         </div>
                       </div>

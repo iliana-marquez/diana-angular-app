@@ -25,7 +25,10 @@ export const PROFILES: IProfile[] = [
         { title: 'Piano Concerto no. 5 in Eb "Emperor", Op. 73 - II. Adagio un poco mosso', author: 'Beethoven', src: 'assets/media/audios/L.v.Beethoven_Piano_Concerto_no.5_in_Eb_Emperor_Op.73-II.Adagio_un_poco_mosso.mp3'},
         { title: 'Nocturne in C sharp minor "Lento con gran espressione", B. 49 (Op. posth.)', author: 'Chopin' , src: 'assets/media/audios/F.Chopin_Nocturne_in_C_sharp_minor_Lento_con_gran_espressione_B.49.mp3' }
     ],
-    videos: [],
+    videos: [
+        { title: 'sample1', author: 'sample1', src: 'assets/media/videos/student-feedback-kristian.mov' },
+        { title: 'sample2', author: 'sample2', src: 'assets/media/videos/sample.mp4' }
+    ],
     youtubeLinks: [
       { title: 'Ballade Nr.2 F-Dur', author: 'Chopin', src: 'https://www.youtube.com/watch?v=_JdcIBlp6mo' },
       { title: 'Fantasien Op. 116, Intermezzo a-Moll', author: 'Brahms', src: 'https://www.youtube.com/watch?v=IH0ovgbZAbU' },

@@ -1,4 +1,7 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { IProfile } from '../iprofile';
+import { ActivatedRoute } from '@angular/router';
+import { PROFILES } from '../profiles';
 
 @Component({
   selector: 'app-profile',
@@ -6,11 +9,22 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
   templateUrl: './profile.component.html',
   styleUrl: './profile.component.css'
 })
-export class ProfileComponent {
+export class ProfileComponent implements OnInit {
+// **** LOGIC FOR PRINTING SELECTED PROFILE DATA ****
+  //
+  profile: IProfile | undefined;
+  
+  constructor (private route: ActivatedRoute) {}
+  ngOnInit(): void {
+    const id = this.route.snapshot.paramMap.get('id');
+    this.profile = PROFILES.find(p => p.id === id);
+  }
+
+
 
 // **** LOGIC FOR AUDIO MEDIA PLAYER ****
   // to track the audio element
-  @ViewChild('audio1') audioElementRef!: ElementRef<HTMLAudioElement>;
+  @ViewChild('audioElement') audioElementRef!: ElementRef<HTMLAudioElement>;
   isPlaying = false;
 
   toggleAudio(audioElement: HTMLAudioElement, event: Event): void {
