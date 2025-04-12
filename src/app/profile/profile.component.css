@@ -43,7 +43,8 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-left: var(--highlight-primary-color) 2px solid;    
+    border-left: var(--highlight-primary-color) 2px solid;
+    transition: ease-in-out 0.3s;    
 }
 
 .profile-link:hover {
