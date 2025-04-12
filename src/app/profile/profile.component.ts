@@ -12,13 +12,15 @@ import { PROFILES } from '../profiles';
 export class ProfileComponent implements OnInit, AfterViewInit {
 // **** LOGIC FOR PRINTING SELECTED PROFILE DATA ****
   //
+  currentProfileId: string | null = null;
   profile: IProfile | undefined;
   
   constructor (private route: ActivatedRoute) {}
+
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
-      const id = params.get('id');
-      this.profile = PROFILES.find(p => p.id === id);
+      this.currentProfileId = params.get('id');
+      this.profile = PROFILES.find(p => p.id === this.currentProfileId);
       window.scrollTo(0, 0); // optional: scroll to top on profile change
     });
   }
