@@ -1,5 +1,6 @@
 import { Component, OnInit, HostListener } from '@angular/core';
-import { Router } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
+import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-navbar',
@@ -10,6 +11,7 @@ import { Router } from '@angular/router';
 export class NavbarComponent implements OnInit {
   isMenuOpen = false;
   isHomePage: boolean = false;
+  isOnProfilePage = false;
   hasScrolled: boolean = false; // To track whether user has scrolled on home page
 
   constructor(private router: Router) { }
@@ -32,6 +34,14 @@ export class NavbarComponent implements OnInit {
         this.hasScrolled = true;  // Keep the scrolled class on other pages
       }
     });
+
+    // Listen to see if on profile page
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe((event: NavigationEnd) => {
+      this.isOnProfilePage = event.urlAfterRedirects.startsWith('/profile/');
+    });
+
   }
 
   toggleMenu() {

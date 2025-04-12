@@ -11,10 +11,10 @@
   
       <!-- Nav Section -->
       <nav [ngClass]="{ 'show': isMenuOpen }" id="links">
-        <ul class="static d-flex align-items-end">
+        <ul class="static d-flex align-items-center">
           <li><a routerLink="/about" (click)="closeMenu()" class="navbar-link text-nowrap">Über mich</a></li>
   
-          <div class="dropdown navbar-link">
+          <div class="dropdown navbar-link" *ngIf="!isOnProfilePage">
             <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               PROFIL
             </button>
