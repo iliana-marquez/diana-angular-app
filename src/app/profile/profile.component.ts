@@ -16,8 +16,11 @@ export class ProfileComponent implements OnInit {
   
   constructor (private route: ActivatedRoute) {}
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get('id');
-    this.profile = PROFILES.find(p => p.id === id);
+    this.route.paramMap.subscribe(params => {
+      const id = params.get('id');
+      this.profile = PROFILES.find(p => p.id === id);
+      window.scrollTo(0, 0); // optional: scroll to top on profile change
+    });
   }
 
 
