@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, QueryList, ViewChild, ViewChildren } from '@angular/core';
 import { IProfile } from '../iprofile';
 import { ActivatedRoute } from '@angular/router';
 import { PROFILES } from '../profiles';
@@ -9,7 +9,7 @@ import { PROFILES } from '../profiles';
   templateUrl: './profile.component.html',
   styleUrl: './profile.component.css'
 })
-export class ProfileComponent implements OnInit {
+export class ProfileComponent implements OnInit, AfterViewInit {
 // **** LOGIC FOR PRINTING SELECTED PROFILE DATA ****
   //
   profile: IProfile | undefined;
@@ -27,34 +27,37 @@ export class ProfileComponent implements OnInit {
 
 // **** LOGIC FOR AUDIO MEDIA PLAYER ****
   // to track the audio element
-  @ViewChild('audioElement') audioElementRef!: ElementRef<HTMLAudioElement>;
-  isPlaying = false;
+  @ViewChildren('audioElement') audioElements!: QueryList<ElementRef<HTMLAudioElement>>;
 
-  toggleAudio(audioElement: HTMLAudioElement, event: Event): void {
-    event.stopPropagation();
+  isPlayingIndex: number | null = null;
 
-    if (audioElement.paused) {
-      audioElement.play();
-      this.isPlaying = true;
+  toggleAudio(index: number): void {
+    const audio = this.audioElements.get(index)?.nativeElement;
 
-      audioElement.onended = () => {
-        this.isPlaying = false;
-      };
+    if (!audio) return;
+
+    if (this.isPlayingIndex === index && !audio.paused) {
+      audio.pause();
+      this.isPlayingIndex = null;
     } else {
-      audioElement.pause();
-      this.isPlaying = false;
+      this.audioElements.forEach((el, i) => {
+        if (i !== index) el.nativeElement.pause();
+      });
+
+      audio.play();
+      this.isPlayingIndex = index;
     }
   }
 
-  // to track the audio element
   ngAfterViewInit(): void {
     const carousel = document.getElementById('audioCarousel');
 
     if (carousel) {
       carousel.addEventListener('slide.bs.carousel', () => {
-        if (this.audioElementRef?.nativeElement && !this.audioElementRef.nativeElement.paused) {
-          this.audioElementRef.nativeElement.pause();
-          this.isPlaying = false;
+        if (this.isPlayingIndex !== null) {
+          const playingAudio = this.audioElements.get(this.isPlayingIndex);
+          playingAudio?.nativeElement.pause();
+          this.isPlayingIndex = null;
         }
       });
     }

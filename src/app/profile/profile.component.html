@@ -69,9 +69,9 @@
                     <div class="carousel-inner media-card">
                       <div  *ngFor="let audio of profile?.audios; let i = index" class="media-samples carousel-item" [class.active]="i === 0">
                         <div class="carousel-caption">
-                          <div class="d-flex flex-column align-items-center justify-content-center" (click)="toggleAudio(audioElementRef.nativeElement, $event)"
+                          <div class="d-flex flex-column align-items-center justify-content-center" (click)="toggleAudio(i)"
                           style="cursor: pointer;">
-                            <i class="fa-solid" [ngClass]="isPlaying ? 'fa-pause rotating' : 'fa-play'"></i>
+                            <i class="fa-solid" [ngClass]="isPlayingIndex ? 'fa-pause rotating' : 'fa-play'"></i>
                             <p class="mb-0 pt-2">{{ audio.title }}</p>
                             <p class="mb-0">{{ audio.author }}</p>
                           </div>
