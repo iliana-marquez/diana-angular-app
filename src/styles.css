@@ -77,7 +77,7 @@ button {
 .dropdown-menu {
     background-color: var(--primary-color);
     border-radius: 0;
-    
+    z-index: 1000;
 }
 
 .dropdown-menu  a {
