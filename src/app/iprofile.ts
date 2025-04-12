@@ -15,7 +15,7 @@ export interface IProfile {
     subtitle: string;
     description: string;
     images: IImage[];
-    audios: IMedia[];
-    videos: IMedia[];
-    youtubeLinks: IMedia[];
+    audios?: IMedia[];
+    videos?: IMedia[];
+    youtubeLinks?: IMedia[];
 }
