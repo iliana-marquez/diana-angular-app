@@ -646,7 +646,7 @@ footer #contact i {
 /* Extra large devices (laptops, 1200px and up*/
 @media screen and (min-width: 1200px) {
     main {  
-        padding-top: 100px;
+        padding-top: 88px;
     }
 }
 
