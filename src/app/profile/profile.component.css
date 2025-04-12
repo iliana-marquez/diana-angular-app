@@ -6,6 +6,7 @@ h3 {
     color: var(--secondary-color);
     font-size: 1.2rem;
     text-align: center;
+    font-weight: 400;
 }
 
 p {
@@ -279,6 +280,7 @@ button {
     
     h3 {
         text-align: start;
+        font-weight: 400;
     }
 
     
