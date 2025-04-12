@@ -1,23 +1,13 @@
 <main>
 
   <!-- Profile Navigation -->
-  <div class="container-fluid d-flex flex-wrap profile-nav justify-content-between align-items-center text-center">
-    <div class="profile-link first" [ngClass]="{'profile-link-active': currentProfileId === 'kulturaktivistin'}">
-      <a [routerLink]="['/profile', 'kulturaktivistin']">Kultur Aktivistin</a>
+  <div class="container-fluid d-flex flex-wrap profile-nav justify-content-between align-items-center text-center">    
+      <a routerLink="/profile/kulturaktivistin" class="profile-link" id="first" [ngClass]="{'profile-link-active': currentProfileId === 'kulturaktivistin'}">Kultur Aktivistin</a>
+      <a routerLink="/profile/pianistin" class="profile-link" [ngClass]="{'profile-link-active': currentProfileId === 'pianistin'}">Pianistin</a>
+      <a routerLink="/profile/coach" class="profile-link" [ngClass]="{'profile-link-active': currentProfileId === 'coach'}">Coach</a>
+      <a routerLink="/profile/singer" class="profile-link" [ngClass]="{'profile-link-active': currentProfileId === 'singer'}">Sängerin</a>
+      <a routerLink="/profile/speaker" class="profile-link" [ngClass]="{'profile-link-active': currentProfileId === 'speaker'}">Sprecherin</a>
     </div>
-    <div class="profile-link" [ngClass]="{'profile-link-active': currentProfileId === 'pianistin'}">
-      <a routerLink="/profile/pianistin">Pianistin</a>
-    </div>
-    <div class="profile-link" [ngClass]="{'profile-link-active': currentProfileId === 'coach'}">
-      <a routerLink="/profile/coach">Coach</a>
-    </div>
-    <div class="profile-link" [ngClass]="{'profile-link-active': currentProfileId === 'singer'}">
-      <a routerLink="/profile/singer">Sängerin</a>
-    </div>
-    <div class="profile-link" [ngClass]="{'profile-link-active': currentProfileId === 'speaker'}">
-      <a routerLink="/profile/speaker">Sprecherin</a>
-    </div>
-  </div>
     
     <!-- Category Intro -->
     <section class="intro container-fluid d-flex m-0 align-items-center justify-content-center">

@@ -30,7 +30,13 @@ p {
     z-index: 1;
 }
 
+#first {
+    border-left: 0;
+}
+
 .profile-link {
+    color: var(--secondary-color);
+    font-size: 10px;
     width: 20%;
     line-height: 1;
     min-height: 31px;
@@ -40,29 +46,19 @@ p {
     border-left: var(--highlight-primary-color) 2px solid;    
 }
 
-.first {
-    border-left: 0;
-}
-
-.profile-link a {
-    color: var(--secondary-color);
-    font-size: 10px;
- 
-}
-
-.profile-link a:hover {
+.profile-link:hover {
     color: var(--highlight-primary-color);
 }
 
 .profile-link-active {
     background-color: var(--highlight-primary-color);
 }
-.profile-link-active a {
+.profile-link-active {
     color: var(--primary-color);
     font-weight: 400;
 }
 
-.profile-link-active a:hover {
+.profile-link-active:hover {
     color: var(--primary-color);
 }
 
@@ -246,7 +242,7 @@ button {
     max-width: 75vw;
     }
 
-    .profile-link a {
+    .profile-link {
         font-size: 13px; 
     }
 }
@@ -268,7 +264,7 @@ button {
     max-width: 75vw;
     }
 
-    .profile-link a {
+    .profile-link {
         font-size: 1rem; 
     }
 }
