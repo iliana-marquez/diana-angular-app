@@ -31,7 +31,7 @@ export const PROFILES: IProfile[] = [
       { title: 'Fantasien Op. 116, Intermezzo a-Moll', author: 'Brahms', src: 'https://www.youtube.com/watch?v=IH0ovgbZAbU' },
       { title: '5.Klavierkonzert Es-Dur - 1.Satz', author: 'Beethoven', src: 'https://www.youtube.com/watch?v=MT91LyOgWKs' },
       { title: '5.Klavierkonzert Es-Dur - 2.Satz', author: 'Beethoven', src: 'https://www.youtube.com/watch?v=U31EuaVfrP8'},
-      { title: '5.Klavierkonzert Es-Dur - 3.Satz', author: 'Beethoven:', src: 'https://www.youtube.com/watch?v=Gv596QFpZYo'},
+      { title: '5.Klavierkonzert Es-Dur - 3.Satz', author: 'Beethoven', src: 'https://www.youtube.com/watch?v=Gv596QFpZYo'},
     ]
   },
   {
@@ -50,13 +50,13 @@ export const PROFILES: IProfile[] = [
     images: [
       { src: 'assets/images/coach-1.jpg', alt: 'Diana unterrichtet glücklich ein Kind am Klavier' },
       { src: 'assets/images/coach-3.png', alt: 'Diana markiert das Tempo einem Schuler am Klavier' },
-      { src: 'assets/images/coach-2', alt: 'Diana erklärt ein Kind beim Unterricht' }
+      { src: 'assets/images/coach-2.jpg', alt: 'Diana erklärt ein Kind beim Unterricht' }
     ],
     audios: [
         { title: 'Piano Trio in G major, K. 564 - III. Allegretto', author: 'Mozart' , src: 'assets/media/audios/Mozart_Piano_Trio_in_G_major_K.564-III.Allegretto.mp3' }
     ],
     videos: [
-      { title: 'Coaching Erfahrung', author: 'mit Christian Kelly', src: 'assets/media/videos/' }
+      { title: 'Coaching Erfahrung', author: 'mit Christian Kelly', src: 'assets/media/videos/student-feedback-kristian.mov' }
     ],
     youtubeLinks: []
   },
@@ -79,17 +79,21 @@ export const PROFILES: IProfile[] = [
       { src: 'assets/images/Diana-singt-mit-voller-Inspiration.jpg', alt: 'Diana singt mit voller Inspiration' },
       { src: 'assets/images/Diana-lachelt-auf-der-buhne-mit-ensemble.jpg', alt: 'Diana lachelt auf der buhne mit ensemble' },
       { src: 'assets/images/Diana-singt-auf-der-Bühne.jpeg', alt: 'Diana singt auf der Bühne mit weißer Kleid' },
-      { src: 'assets/images/Diana-singt-mit-voller-Inspiration.jpg', alt: 'Diana singt mit voller Inspiration' },
       { src: 'assets/images/Diana-spuert-die-musik-auf-der-buehne.jpg', alt: 'Diana laechelt auf der buhne mit ensemble' },
       { src: 'assets/images/diana-cd-alma-sin-fronteras.png', alt: 'Diana Album Cover ihrer CD Alma sin Fronteras' },
       { src: 'assets/images/Diana-singt-kerzen.jpg', alt: 'Diana singt auf der Bühne mit Kerzenlicht' },
       { src: 'assets/images/Diana-singt-und-tanzt.jpg', alt: 'Diana singt auf der Bühne mit Kerzenlicht' }
     ],
     audios: [
-        { title: 'Como imaginar' , author: 'Chico Novarro' , src: 'assets/media/audios/Mozart_Piano_Trio_in_G_major_K.564-III.Allegretto.mp3' }
+        { title: 'Como imaginar' , author: 'Chico Novarro' , src: 'assets/media/audios/prueba.mp4' }
     ],
     videos: [
-      { title: 'Desafinado (Antônio Carlos Jobim)', author: 'Diana & Friends', src: 'https://www.youtube.com/watch?v=V__Wp66fh4M' },
+      { title: 'Cielito Lindo (Quirino Mendoza)', author: 'Diana & Friends', src: 'assets/media/videos/singer-diana-carlos-cielito-lindo.mp4' },
+      { title: 'Te quiero tanto (Pasión Vega)', author: 'Diana & Friends', src: 'assets/media/videos/singer-diana-te-quiero-tanto.mp4' },
+      { title: 'Keď harmonika tíško znie (Antônio Carlos Jobim)', author: 'Diana & Friends', src: 'assets/media/videos/singer-diana-ked-harmonika.mp4' },
+      { title: 'Perdón (Pedro Flores)', author: 'Diana & Friends', src: 'assets/media/videos/singer-diana-perdon.mp4' },
+      { title: 'Capullito de Alelí (Rafael Hernandez)', author: 'Diana & Friends', src: 'assets/media/videos/singer-diana-capullito-de-aleli.mp4' },
+      { title: 'Podmoskovnye Vecera (Solovyov-Sedoi / Matusovsky)', author: 'Diana & Friends', src: 'assets/media/videos/singer-diana-podmoskovnye-vecera.mp4.mp4' },
     ],
     youtubeLinks: [
       { title: 'Desafinado (Antônio Carlos Jobim)', author: 'Diana & Friends', src: 'https://www.youtube.com/watch?v=V__Wp66fh4M' },
@@ -112,7 +116,7 @@ export const PROFILES: IProfile[] = [
   },
   {
     id: 'speaker',
-    title: 'Sprächerin',
+    title: 'Sprecherin',
     subtitle: 'Die Stimme als Instrument der Emotion',
     description: `Dank meiner Schauspielerfahrung und einer mehrsprachigen Erziehung habe ich die wunderbare Möglichkeit, auch als Sprecherin tätig zu sein.<br><br>
         Ich verleihe Werbespots, Hörbüchern und anderen Produktionen meine Stimme – präzise, lebendig und mit Gefühl.<br><br>
@@ -120,20 +124,12 @@ export const PROFILES: IProfile[] = [
         Ob sanft oder kraftvoll, sinnlich oder sachlich – meine Stimme ist mein Instrument, um Inhalte mit Leben zu füllen und ein breites Publikum zu erreichen.`,
     images: [
       { src: 'assets/images/diana-speaker-1.jpg', alt: 'Diana am Record Studio bei einem Sprechen Session' },
-      { src: 'assets/images/diana-speaker-2.jpg', alt: 'Diana ' },
-      { src: 'assets/images/Diana-singt-auf-der-Bühne.jpeg', alt: 'Diana singt auf der Bühne mit weißer Kleid' },
-      { src: 'assets/images/Diana-singt-mit-voller-Inspiration.jpg', alt: 'Diana singt mit voller Inspiration' },
-      { src: 'assets/images/Diana-spuert-die-musik-auf-der-buehne.jpg', alt: 'Diana lachelt auf der buhne mit ensemble' },
-      { src: 'assets/images/Diana-singt-auf-der-Bühne.jpeg', alt: 'Diana singt auf der Bühne mit weißer Kleid' }
+      { src: 'assets/images/diana-speaker-2.jpg', alt: 'Diana beim Aufnehmen' }
     ],
     audios: [
         { title: 'Prolog aus dem Buch Nad Priepastou (SK)', author: 'Maria Havranova' , src: 'assets/media/audios/Prolog_Diana_Maria_Havranova_Nad_priepastou_SK.mp3' }
     ],
-    videos: [
-      { title: 'Coaching Erfahrung', author: 'mit Christian Kelly', src: 'assets/media/videos/' }
-    ],
-    youtubeLinks: [
-      { title: 'LKW WALTER - Ihr europäischer Transporter (SK)', author: 'Image Film', src: 'assets/media/videos/' }
-    ]
+    videos: [],
+    youtubeLinks: []
   }
 ];
