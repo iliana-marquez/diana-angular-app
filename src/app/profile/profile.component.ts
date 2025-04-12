@@ -23,6 +23,14 @@ export class ProfileComponent implements OnInit, AfterViewInit {
     });
   }
 
+// **** LOGIT TO SCROLL TO MEDIA SECITON
+  @ViewChild('mediaSection') mediaSection!: ElementRef;
+
+  scrollToMedia(): void {
+    this.mediaSection.nativeElement.scrollIntoView({ behavior: 'smooth' });
+  }
+
+
 
 
 // **** LOGIC FOR AUDIO MEDIA PLAYER ****

@@ -94,6 +94,12 @@ p {
     object-position: top;
 }
 
+/* Media Link to scroll down */
+.media-link {
+    color: var(--highlight-primary-color);
+    cursor: pointer;
+}
+
 button {
     z-index: 0;
 }
