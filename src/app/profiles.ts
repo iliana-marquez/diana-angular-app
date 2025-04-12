@@ -82,7 +82,6 @@ export const PROFILES: IProfile[] = [
       { src: 'assets/images/Diana-singt-mit-voller-Inspiration.jpg', alt: 'Diana singt mit voller Inspiration' },
       { src: 'assets/images/Diana-lachelt-auf-der-buhne-mit-ensemble.jpg', alt: 'Diana lachelt auf der buhne mit ensemble' },
       { src: 'assets/images/Diana-singt-auf-der-Bühne.jpeg', alt: 'Diana singt auf der Bühne mit weißer Kleid' },
-      { src: 'assets/images/Diana-spuert-die-musik-auf-der-buehne.jpg', alt: 'Diana laechelt auf der buhne mit ensemble' },
       { src: 'assets/images/diana-cd-alma-sin-fronteras.png', alt: 'Diana Album Cover ihrer CD Alma sin Fronteras' },
       { src: 'assets/images/Diana-singt-kerzen.jpg', alt: 'Diana singt auf der Bühne mit Kerzenlicht' },
       { src: 'assets/images/Diana-singt-und-tanzt.jpg', alt: 'Diana singt auf der Bühne mit Kerzenlicht' }
