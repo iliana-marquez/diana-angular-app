@@ -1,12 +1,12 @@
 <main #introSection>
 
   <!-- Profile Navigation -->
-  <div class="container-fluid d-flex flex-wrap profile-nav justify-content-between align-items-center text-center">    
-      <a routerLink="/profile/kulturaktivistin" class="profile-link" id="first" [ngClass]="{'profile-link-active': currentProfileId === 'kulturaktivistin'}">Kultur Aktivistin</a>
-      <a routerLink="/profile/pianistin" class="profile-link" [ngClass]="{'profile-link-active': currentProfileId === 'pianistin'}">Pianistin</a>
-      <a routerLink="/profile/coach" class="profile-link" [ngClass]="{'profile-link-active': currentProfileId === 'coach'}">Coach</a>
-      <a routerLink="/profile/singer" class="profile-link" [ngClass]="{'profile-link-active': currentProfileId === 'singer'}">Sängerin</a>
-      <a routerLink="/profile/speaker" class="profile-link" [ngClass]="{'profile-link-active': currentProfileId === 'speaker'}">Sprecherin</a>
+    <div class="container-fluid d-flex flex-wrap profile-nav justify-content-between align-items-center text-center">    
+      <a routerLink="/profile/kulturaktivistin" class="profile-link" id="first" [ngClass]="{'profile-link-active': currentProfileId === 'kulturaktivistin'}" (click)="closeMenu()">Kultur Aktivistin</a>
+      <a routerLink="/profile/pianistin" class="profile-link" [ngClass]="{'profile-link-active': currentProfileId === 'pianistin'}" (click)="closeMenu()">Pianistin</a>
+      <a routerLink="/profile/coach" class="profile-link" [ngClass]="{'profile-link-active': currentProfileId === 'coach'}" (click)="closeMenu()">Coach</a>
+      <a routerLink="/profile/singer" class="profile-link" [ngClass]="{'profile-link-active': currentProfileId === 'singer'}" (click)="closeMenu()">Sängerin</a>
+      <a routerLink="/profile/speaker" class="profile-link" [ngClass]="{'profile-link-active': currentProfileId === 'speaker'}" (click)="closeMenu()">Sprecherin</a>
     </div>
     
     <!-- Category Intro -->

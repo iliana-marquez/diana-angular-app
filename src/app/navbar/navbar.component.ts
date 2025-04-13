@@ -1,6 +1,7 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
-import { filter } from 'rxjs';
+import { filter, Subscription } from 'rxjs';
+import { MenuService } from '../services/menu.service';
 
 @Component({
   selector: 'app-navbar',
@@ -14,7 +15,9 @@ export class NavbarComponent implements OnInit {
   isOnProfilePage = false;
   hasScrolled: boolean = false; // To track whether user has scrolled on home page
 
-  constructor(private router: Router) { }
+  private menuSub!: Subscription;
+  
+  constructor(private router: Router, private menuService: MenuService) { }
 
   goHome(): void {
     this.router.navigate(['/home']).then(() => {
@@ -42,6 +45,14 @@ export class NavbarComponent implements OnInit {
       this.isOnProfilePage = event.urlAfterRedirects.startsWith('/profile/');
     });
 
+    this.menuSub = this.menuService.closeMenu$.subscribe(() => {
+      this.closeMenu();
+    });
+
+  }
+
+  ngOnDestroy() {
+    this.menuSub?.unsubscribe();
   }
 
   toggleMenu() {

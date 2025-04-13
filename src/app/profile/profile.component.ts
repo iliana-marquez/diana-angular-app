@@ -2,6 +2,7 @@ import { AfterViewInit, Component, ElementRef, OnInit, QueryList, ViewChild, Vie
 import { IProfile } from '../iprofile';
 import { ActivatedRoute } from '@angular/router';
 import { PROFILES } from '../profiles';
+import { MenuService } from '../services/menu.service';
 
 @Component({
   selector: 'app-profile',
@@ -15,7 +16,11 @@ export class ProfileComponent implements OnInit, AfterViewInit {
   currentProfileId: string | null = null;
   profile: IProfile | undefined;
   
-  constructor (private route: ActivatedRoute) {}
+  constructor (private route: ActivatedRoute, private menuService: MenuService) {}
+
+  closeMenu(){
+    this.menuService.triggerCloseMenu();
+  }
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
