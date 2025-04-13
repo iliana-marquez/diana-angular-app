@@ -25,17 +25,23 @@ export class ProfileComponent implements OnInit, AfterViewInit {
     });
   }
 
-// **** LOGIT TO SCROLL TO MEDIA SECITON
+// **** LOGIC TO SCROLL TO MEDIA SECITON
   @ViewChild('mediaSection') mediaSection!: ElementRef;
 
   scrollToMedia(): void {
     this.mediaSection.nativeElement.scrollIntoView({ behavior: 'smooth' });
   }
-// **** LOGIT TO SCROLL TO PROJECTS SECITON
+// **** LOGIC TO SCROLL TO PROJECTS SECITON
   @ViewChild('projectsSection') projectsSection!: ElementRef;
 
   scrollToProjects(): void {
     this.projectsSection.nativeElement.scrollIntoView({ behavior: 'smooth' });
+  }
+// **** LOGIC TO SCROLL UP
+  @ViewChild('introSection') introSection!: ElementRef;
+
+  scrollToIntro(): void {
+    this.introSection.nativeElement.scrollIntoView({ behavior: 'smooth' });
   }
 
 
