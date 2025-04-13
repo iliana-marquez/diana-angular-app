@@ -21,7 +21,9 @@ export class NavbarComponent implements OnInit {
 
   goHome(): void {
     this.router.navigate(['/home']).then(() => {
-      window.location.reload(); // Reload the page after navigating
+      window.scrollTo({ top: 0 });        
+      this.setHomePageStatus();          
+      this.onScroll();                   
     });
   }
 
@@ -93,4 +95,7 @@ export class NavbarComponent implements OnInit {
       homeLogo?.classList.add('scrolled');
     }
   }
+
+  
+
 }
