@@ -21,22 +21,9 @@ export const PROFILES: IProfile[] = [
         { src: 'assets/images/diana-pianist-baby.jpg', alt: 'Baby Diana am Klavier' },
         { src: 'assets/images/diana-piano-after-a-concert.jpg', alt: 'Diana glücklich nach einem Konzert mit einem Blumenstrauss vor dem Konzerthaus' }
     ],
-    audios: [
-        { title: 'Piano Concerto no. 5 in Eb "Emperor", Op. 73 - III. Rondo_ Allegro ma non troppo', author: 'Beethoven' , src: 'assets/media/audios/L.v.Beethoven_Piano_Concerto_no.5_in_Eb _EmperorOp.73.III.Rondo_ Allegro_ma_non_troppo.mp3' },
-        { title: 'Piano Concerto no. 5 in Eb "Emperor", Op. 73 - II. Adagio un poco mosso', author: 'Beethoven', src: 'assets/media/audios/L.v.Beethoven_Piano_Concerto_no.5_in_Eb_Emperor_Op.73-II.Adagio_un_poco_mosso.mp3'},
-        { title: 'Nocturne in C sharp minor "Lento con gran espressione", B. 49 (Op. posth.)', author: 'Chopin' , src: 'assets/media/audios/F.Chopin_Nocturne_in_C_sharp_minor_Lento_con_gran_espressione_B.49.mp3' }
-    ],
-    videos: [
-        { title: 'sample1', author: 'sample1', src: 'assets/media/videos/student-feedback-kristian.mov' },
-        { title: 'sample2', author: 'sample2', src: 'assets/media/videos/sample.mp4' }
-    ],
-    youtubeLinks: [
-      { title: 'Ballade Nr.2 F-Dur', author: 'Chopin', src: 'https://www.youtube.com/watch?v=_JdcIBlp6mo' },
-      { title: 'Fantasien Op. 116, Intermezzo a-Moll', author: 'Brahms', src: 'https://www.youtube.com/watch?v=IH0ovgbZAbU' },
-      { title: '5.Klavierkonzert Es-Dur - 1.Satz', author: 'Beethoven', src: 'https://www.youtube.com/watch?v=MT91LyOgWKs' },
-      { title: '5.Klavierkonzert Es-Dur - 2.Satz', author: 'Beethoven', src: 'https://www.youtube.com/watch?v=U31EuaVfrP8'},
-      { title: '5.Klavierkonzert Es-Dur - 3.Satz', author: 'Beethoven', src: 'https://www.youtube.com/watch?v=Gv596QFpZYo'},
-    ]
+    audios: [],
+    videos: [],
+    youtubeLinks: []
   },
   {
     id: 'pianistin',
@@ -88,20 +75,17 @@ export const PROFILES: IProfile[] = [
         Musik ist lebendig. Sie ist die einzige Kunstart, die nur im selben Augenblick existiert und dann verschwindet. Sie ist unmittelbar und kann ohne Vorwarnung überwältigen. Ihre Wirkung ist unvergleichlich. Wenn Musik Emotionen weckt, wenn Zuhörer in einem einzigen Klang die ganze Vielfalt des Lebens spüren, dann wird die wahre Aufgabe der Kunst erfüllt: Sie bewegt, verbindet und inspiriert.<br><br>
         <i>„Licht in die Tiefe des menschlichen Herzens senden - Künstlers Beruf“.</i> Robert Schumann`,
     images: [
-        { src: 'assets/images/diana-pianist-hands.jpg', alt: 'Dianas Hände am Klavier' },
-        { src: 'assets/images/diana-pianist-choir.jpg', alt: 'Diana begleitet ein Chorkonzert' },
-        { src: 'assets/images/diana-pianist-baby.jpg', alt: 'Baby Diana am Klavier' },
-        { src: 'assets/images/diana-piano-after-a-concert.jpg', alt: 'Diana glücklich nach einem Konzert mit einem Blumenstrauss vor dem Konzerthaus' }
+      { src: 'assets/images/diana-pianist-hands.jpg', alt: 'Dianas Hände am Klavier' },
+      { src: 'assets/images/diana-pianist-choir.jpg', alt: 'Diana begleitet ein Chorkonzert' },
+      { src: 'assets/images/diana-pianist-baby.jpg', alt: 'Baby Diana am Klavier' },
+      { src: 'assets/images/diana-piano-after-a-concert.jpg', alt: 'Diana glücklich nach einem Konzert mit einem Blumenstrauss vor dem Konzerthaus' }
     ],
     audios: [
-        { title: 'Piano Concerto no. 5 in Eb "Emperor", Op. 73 - III. Rondo_ Allegro ma non troppo', author: 'Beethoven' , src: 'assets/media/audios/L.v.Beethoven_Piano_Concerto_no.5_in_Eb _EmperorOp.73.III.Rondo_ Allegro_ma_non_troppo.mp3' },
-        { title: 'Piano Concerto no. 5 in Eb "Emperor", Op. 73 - II. Adagio un poco mosso', author: 'Beethoven', src: 'assets/media/audios/L.v.Beethoven_Piano_Concerto_no.5_in_Eb_Emperor_Op.73-II.Adagio_un_poco_mosso.mp3'},
-        { title: 'Nocturne in C sharp minor "Lento con gran espressione", B. 49 (Op. posth.)', author: 'Chopin' , src: 'assets/media/audios/F.Chopin_Nocturne_in_C_sharp_minor_Lento_con_gran_espressione_B.49.mp3' }
+      { title: 'Piano Concerto no. 5 in Eb "Emperor", Op. 73 - II. Adagio un poco mosso', author: 'Beethoven', src: 'assets/media/audios/L.v.Beethoven_Piano_Concerto_no.5_in_Eb_Emperor_Op.73-II.Adagio_un_poco_mosso.mp3'},
+      { title: 'Piano Concerto no. 5 in Eb "Emperor", Op. 73 - III. Rondo_ Allegro ma non troppo', author: 'Beethoven' , src: 'assets/media/audios/L.v.Beethoven_Piano_Concerto_no.5_in_Eb _EmperorOp.73.III.Rondo_ Allegro_ma_non_troppo.mp3' },
+      { title: 'Nocturne in C sharp minor "Lento con gran espressione", B. 49 (Op. posth.)', author: 'Chopin' , src: 'assets/media/audios/F.Chopin_Nocturne_in_C_sharp_minor_Lento_con_gran_espressione_B.49.mp3' }
     ],
-    videos: [
-        { title: 'sample1', author: 'sample1', src: 'assets/media/videos/student-feedback-kristian.mov' },
-        { title: 'sample2', author: 'sample2', src: 'assets/media/videos/sample.mp4' }
-    ],
+    videos: [],
     youtubeLinks: [
       { title: 'Ballade Nr.2 F-Dur', author: 'Chopin', src: 'https://www.youtube.com/watch?v=_JdcIBlp6mo' },
       { title: 'Fantasien Op. 116, Intermezzo a-Moll', author: 'Brahms', src: 'https://www.youtube.com/watch?v=IH0ovgbZAbU' },
