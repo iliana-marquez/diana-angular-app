@@ -78,8 +78,11 @@ export const PROFILES: IProfile[] = [
         Jede Begegnung, jede Stunde, jedes Klangbild eröffnet neue Räume.<br><br>
         <i>„Es ist des Lernens kein Ende.“</i> Robert Schumann`,
     images: [
+      { src: 'assets/images/coach-1-1.png', alt: 'Diana unterrichtet glücklich ein Kind am Klavier' },
       { src: 'assets/images/coach-1.jpg', alt: 'Diana unterrichtet glücklich ein Kind am Klavier' },
+      { src: 'assets/images/coach-1-6.png', alt: 'Diana unterrichtet glücklich ein Kind am Klavier' },
       { src: 'assets/images/coach-3.png', alt: 'Diana markiert das Tempo einem Schuler am Klavier' },
+      { src: 'assets/images/coach-1-3.png', alt: 'Diana unterrichtet glücklich ein Kind am Klavier' },
       { src: 'assets/images/coach-2.jpg', alt: 'Diana erklärt ein Kind beim Unterricht' }
     ],
     audios: [
@@ -160,6 +163,7 @@ export const PROFILES: IProfile[] = [
         Was mich dabei besonders begeistert, ist es, Phrasen, Gedanken und Geschichten auf ganz unterschiedliche Weise zu gestalten – mit Melodie, Klangfarbe und Rhythmus Emotionen zu wecken und Menschen unmittelbar zu berühren.<br><br>
         Ob sanft oder kraftvoll, sinnlich oder sachlich – meine Stimme ist mein Instrument, um Inhalte mit Leben zu füllen und ein breites Publikum zu erreichen.`,
     images: [
+      { src: 'assets/images/speaker-1-1.png', alt: 'Diana biem Aufnehmen im Record Studio' },
       { src: 'assets/images/speaker-1.png', alt: 'Diana biem Aufnehmen im Record Studio' },
       { src: 'assets/images/speaker-3.png', alt: 'Diana biem Aufnehmen im Record Studio' },
       { src: 'assets/images/speaker-4.jpg', alt: 'Diana biem Aufnehmen im Record Studio' },
