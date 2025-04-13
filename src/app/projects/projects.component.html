@@ -1,10 +1,11 @@
-<main>
-  <!-- Projects section  -->
-  <div class="projects-section">
-    <h2 class="block-title hl-secondary-color-title pb-3 text-center">
-      Projekte
-    </h2>
-
+<!-- Projects section  -->
+<div class="projects-section py-5">
+  <h2 class="block-title hl-secondary-color-title pb-3 text-center">
+    Projekte
+  </h2>
+  
+  <!-- Wrapper for outer accordions -->
+  <div id="projectsAccordion">
     <!-- Jugend Projekte -->
     <div class="accordion accordion-flush outer" id="accordionProjektCategory1">
       <div class="accordion-item">
@@ -23,16 +24,17 @@
         <div
           id="flush-jugend-collapseOne"
           class="accordion-collapse collapse"
-          data-bs-parent="#accordionProjektCategory1"
+          data-bs-parent="#projectsAccordion"
         >
           <div class="accordion-body">
             <h6 class="text-center">
               „Jedes Kind ist ein Künstler. Das Problem ist, Künstler zu
               bleiben, wenn man erwachsen wird.“ Pablo Picasso
             </h6>
+            <!-- Wrapper for inner accordions -->
+            <div id="innerAccordion">
             <!-- #1 -->
-            <div class="accordion accordion-flush inner" id="accordionProject2">
-              <!-- Firtst Accordion Item -->
+            <div class="accordion accordion-flush inner" id="accordionProject1">
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button
@@ -49,7 +51,7 @@
                 <div
                   id="flush-jugend-1-collapseOne"
                   class="accordion-collapse collapse"
-                  data-bs-parent="#accordionProject2"
+                  data-bs-parent="#innerAccordion"
                 >
                   <div class="accordion-body">
                     <!-- Project Intro -->
@@ -138,7 +140,6 @@
             </div>
             <!-- #2 -->
             <div class="accordion accordion-flush inner" id="accordionProject2">
-              <!-- Firtst Accordion Item -->
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button
@@ -155,7 +156,7 @@
                 <div
                   id="flush-jugend-2-collapseOne"
                   class="accordion-collapse collapse"
-                  data-bs-parent="#accordionProject2"
+                  data-bs-parent="#innerAccordion"
                 >
                   <div class="accordion-body">
                     <!-- Project Intro -->
@@ -244,7 +245,6 @@
             </div>
             <!-- #3 -->
             <div class="accordion accordion-flush inner" id="accordionProject3">
-              <!-- Firtst Accordion Item -->
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button
@@ -261,7 +261,7 @@
                 <div
                   id="flush-jugend-3-collapseOne"
                   class="accordion-collapse collapse"
-                  data-bs-parent="#accordionProject3"
+                  data-bs-parent="#innerAccordion"
                 >
                   <div class="accordion-body">
                     <!-- Project Intro -->
@@ -342,6 +342,7 @@
                 </div>
               </div>
             </div>
+            </div>
           </div>
         </div>
       </div>
@@ -365,7 +366,7 @@
         <div
           id="flush-konzerte-collapseOne"
           class="accordion-collapse collapse"
-          data-bs-parent="#accordionProjektCategory2"
+          data-bs-parent="#projectsAccordion"
         >
           <div class="accordion-body">
             <!-- Konzerte Intro -->
@@ -456,7 +457,7 @@
         <div
           id="flush-vernissagen-collapseOne"
           class="accordion-collapse collapse"
-          data-bs-parent="#accordionProjektCategory3"
+          data-bs-parent="#projectsAccordion"
         >
           <div class="accordion-body">
             <!-- Vernissagen Intro -->
@@ -547,7 +548,7 @@
         <div
           id="flush-muertos-collapseOne"
           class="accordion-collapse collapse"
-          data-bs-parent="#accordionProjektCategory4"
+          data-bs-parent="#projectsAccordion"
         >
           <div class="accordion-body">
             <!-- Vernissagen Intro -->
@@ -638,7 +639,7 @@
         <div
           id="flush-filme-collapseOne"
           class="accordion-collapse collapse"
-          data-bs-parent="#accordionProjektCategory5"
+          data-bs-parent="#projectsAccordion"
         >
           <div class="accordion-body">
             <!-- Vernissagen Intro -->
@@ -713,4 +714,5 @@
 
     
   </div>
-</main>
+
+</div>
