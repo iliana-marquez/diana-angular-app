@@ -56,7 +56,7 @@
             </div>
             <!-- Audio Section -->
              <!-- iterate available audios -->
-            <div class="col-12 col-xl-6">
+            <div class="col-12 col-xl-6" *ngIf="profile?.audios?.length">
                 <p class="text-center m-0">AUDIO</p>
                 <div id="audioCarousel" class="carousel slide">
                     <div class="carousel-inner media-card">
@@ -85,7 +85,7 @@
             </div>
             <!-- Video Section -->
              <!-- iterate available videos -->
-            <div class="col-12 col-xl-6">
+            <div class="col-12 col-xl-6" *ngIf="profile?.videos?.length">
                 <p class="text-center m-0 pt-2">VIDEO</p>
                 <div id="videoCarousel" class="carousel slide">
                     <div class="carousel-inner media-card">
@@ -112,7 +112,7 @@
                 </div>
             </div>
             <!-- Youtube Links Section -->
-            <div class="col-12 col-xl-6">
+            <div class="col-12 col-xl-6" *ngIf="profile?.youtubeLinks?.length">
                 <p class="text-center m-0 pt-2">YOUTUBE</p>
                 <div id="linksCarousel" class="carousel slide">
                     <div class="carousel-inner media-card">
