@@ -152,10 +152,9 @@ export const PROFILES: IProfile[] = [
         Sie steht für eine musikalische Reise voller Vertrauen, Qualität und kreativer Freiheit.<br><br>
         Musik überschreitet Grenzen – emotional, sprachlich, kulturell. Und meine Stimme trägt diese Botschaft mit Leidenschaft weiter.`,
     images: [
-      { src: 'assets/images/Diana-singt-mit-voller-Inspiration.jpg', alt: 'Diana singt mit voller Inspiration' },
       { src: 'assets/images/Diana-lachelt-auf-der-buhne-mit-ensemble.jpg', alt: 'Diana lachelt auf der buhne mit ensemble' },
-      { src: 'assets/images/Diana-singt-auf-der-Bühne.jpeg', alt: 'Diana singt auf der Bühne mit weißer Kleid' },
       { src: 'assets/images/diana-cd-alma-sin-fronteras.png', alt: 'Diana Album Cover ihrer CD Alma sin Fronteras' },
+      { src: 'assets/images/Diana-singt-auf-der-Bühne.jpeg', alt: 'Diana singt auf der Bühne mit weißer Kleid' },
       { src: 'assets/images/Diana-singt-kerzen.jpg', alt: 'Diana singt auf der Bühne mit Kerzenlicht' },
       { src: 'assets/images/Diana-singt-und-tanzt.jpg', alt: 'Diana singt auf der Bühne mit Kerzenlicht' }
     ],
@@ -202,7 +201,7 @@ export const PROFILES: IProfile[] = [
       { src: 'assets/images/diana-speaker-2.jpg', alt: 'Diana beim Aufnehmen' }
     ],
     audios: [
-        { title: 'Prolog aus dem Buch Nad Priepastou (SK)', author: 'Maria Havranova' , src: 'assets/media/audios/Prolog_Diana_Maria_Havranova_Nad_priepastou_SK.mp3' }
+        { title: 'Prolog aus dem Buch Nad Priepastou (SK)', author: 'Maria Havranova' , src: 'audio-1-speaker-werbung-designer-outlet-parndorf-winter-sale-sk-studio-wunderbar.mp3' }
     ],
     videos: [],
     youtubeLinks: []
