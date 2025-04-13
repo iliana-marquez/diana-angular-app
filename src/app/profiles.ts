@@ -86,7 +86,7 @@ export const PROFILES: IProfile[] = [
       { src: 'assets/images/coach-2.jpg', alt: 'Diana erklärt ein Kind beim Unterricht' }
     ],
     audios: [
-      { title: 'Piano Trio in G major, K. 564 - III. Allegretto', author: 'Mozart' , src: 'assets/media/audios/Mozart_Piano_Trio_in_G_major_K.564-III.Allegretto.mp3' }
+      { title: 'Piano Trio in G major, K. 564 - III. Allegretto', author: 'Mozart' , src: 'assets/media/audios/audio-coach-mozart-piano-trio-g-major-K-564-III-allegretto.mp3' }
     ],
     videos: [
       { title: 'Coaching Erfahrung', author: 'mit Christian Kelly', src: 'assets/media/videos/student-feedback-kristian.mov' }
