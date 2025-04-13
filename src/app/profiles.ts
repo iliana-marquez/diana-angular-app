@@ -83,13 +83,13 @@ export const PROFILES: IProfile[] = [
       { src: 'assets/images/coach-1-6.png', alt: 'Diana unterrichtet glücklich ein Kind am Klavier' },
       { src: 'assets/images/coach-3.png', alt: 'Diana markiert das Tempo einem Schuler am Klavier' },
       { src: 'assets/images/coach-1-3.png', alt: 'Diana unterrichtet glücklich ein Kind am Klavier' },
-      { src: 'assets/images/coach-2.jpg', alt: 'Diana erklärt ein Kind beim Unterricht' }
+      { src: 'assets/images/coach-2.jpg', alt: 'Diana erklärt ein Kind beim Unterricht' },
     ],
     audios: [
-      { title: 'Piano Trio in G major, K. 564 - III. Allegretto', author: 'Mozart' , src: 'assets/media/audios/audio-coach-mozart-piano-trio-g-major-K-564-III-allegretto.mp3' }
+      { title: 'Piano Trio in G major, K. 564 - III. Allegretto', author: 'Mozart' , src: 'assets/media/audios/audio-coach-mozart-piano-trio-g-major-K-564-III-allegretto.mp3' },
     ],
     videos: [
-      { title: 'Coaching Erfahrung', author: 'mit Christian Kelly', src: 'assets/media/videos/student-feedback-kristian.mov' }
+      { title: 'Coaching Erfahrung', author: 'mit Christian Kelly', src: 'assets/media/videos/student-feedback-kristian.mov' },
     ],
     youtubeLinks: []
   },
@@ -113,7 +113,7 @@ export const PROFILES: IProfile[] = [
       { src: 'assets/images/diana-cd-alma-sin-fronteras.png', alt: 'Diana Album Cover ihrer CD Alma sin Fronteras' },
       { src: 'assets/images/Diana-singt-auf-der-Bühne.jpeg', alt: 'Diana singt auf der Bühne mit weißer Kleid' },
       { src: 'assets/images/Diana-singt-kerzen.jpg', alt: 'Diana singt auf der Bühne mit Kerzenlicht' },
-      { src: 'assets/images/Diana-singt-und-tanzt.jpg', alt: 'Diana singt auf der Bühne mit Kerzenlicht' }
+      { src: 'assets/images/Diana-singt-und-tanzt.jpg', alt: 'Diana singt auf der Bühne mit Kerzenlicht' },
     ],
     audios: [
       { title: 'María de Buenos Aires (Astor Piazolla)' , author: 'Las Dibas' , src: 'assets/media/audios/audio-singer-maria-de-buenos-astor-piazzolla-performer-las-dibas.wav' },
