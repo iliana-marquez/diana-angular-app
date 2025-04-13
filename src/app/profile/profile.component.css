@@ -112,6 +112,17 @@ p {
     font-weight: 400;
 }
 
+.up-link i {
+    background-color: var(--highlight-primary-color);
+    color: var(--primary-color);
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
 button {
     z-index: 0;
 }

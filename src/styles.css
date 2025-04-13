@@ -345,6 +345,7 @@ p {
 .link-inline {
     position: relative; 
     display: inline-block;
+    font-weight: 400;
 }
 
 .link-inline::after {
