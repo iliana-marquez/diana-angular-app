@@ -4,7 +4,8 @@
     z-index: 0;
 }
 
-.col-12 h2 {
+.col-12 h2,
+.col-12 h4 {
     font-weight: 200;
     color: var(--tertiary-color);
 }
@@ -43,6 +44,10 @@
 .video-links a {
     display: block;
     color: var(--tertiary-color);
+}
+
+.video-links a:hover {
+    font-weight: 400;
 }
 
 .carousel {
