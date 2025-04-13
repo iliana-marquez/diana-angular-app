@@ -49,42 +49,6 @@ export const PROFILES: IProfile[] = [
         { title: 'Piano Concerto no. 5 in Eb "Emperor", Op. 73 - II. Adagio un poco mosso', author: 'Beethoven', src: 'assets/media/audios/L.v.Beethoven_Piano_Concerto_no.5_in_Eb_Emperor_Op.73-II.Adagio_un_poco_mosso.mp3'},
         { title: 'Nocturne in C sharp minor "Lento con gran espressione", B. 49 (Op. posth.)', author: 'Chopin' , src: 'assets/media/audios/F.Chopin_Nocturne_in_C_sharp_minor_Lento_con_gran_espressione_B.49.mp3' }
     ],
-    videos: [
-        { title: 'sample1', author: 'sample1', src: 'assets/media/videos/student-feedback-kristian.mov' },
-        { title: 'sample2', author: 'sample2', src: 'assets/media/videos/sample.mp4' }
-    ],
-    youtubeLinks: [
-      { title: 'Ballade Nr.2 F-Dur', author: 'Chopin', src: 'https://www.youtube.com/watch?v=_JdcIBlp6mo' },
-      { title: 'Fantasien Op. 116, Intermezzo a-Moll', author: 'Brahms', src: 'https://www.youtube.com/watch?v=IH0ovgbZAbU' },
-      { title: '5.Klavierkonzert Es-Dur - 1.Satz', author: 'Beethoven', src: 'https://www.youtube.com/watch?v=MT91LyOgWKs' },
-      { title: '5.Klavierkonzert Es-Dur - 2.Satz', author: 'Beethoven', src: 'https://www.youtube.com/watch?v=U31EuaVfrP8'},
-      { title: '5.Klavierkonzert Es-Dur - 3.Satz', author: 'Beethoven', src: 'https://www.youtube.com/watch?v=Gv596QFpZYo'},
-    ]
-  },
-  {
-    id: 'pianistin',
-    title: 'Pianistin',
-    subtitle: 'Die Bühne – mein Resonanzraum',
-    description: `Als Pianistin durfte ich das Privileg erleben, mehrere internationale Klavierwettbewerbe zu gewinnen und europaweit in Konzerten aufzutreten - sowohl als Solistin als auch in kammermusikalischen Formationen. Doch was mich immer wieder aufs Neue berührt und erfüllt, ist die Zusammenarbeit mit Orchestern. Als Solistin gemeinsam mit einem Orchester zu spielen, ist für mich ein zutiefst bewegender Moment - kraftvoll, intensiv, fast transzendental.<br><br> 
-        Mitten im Meer der Klänge, ausgestattet mit technischem Können, künstlerischer Reife und einem offenen Herzen, taucht man ein in den Teich der Demut. Man findet sein inneres Zentrum - diesen energetischen Kern - und beginnt, aus diesem heraus zu leuchten. Man wird eins mit der Musik. Und plötzlich trägt man das ganze Orchester mit.<br><br>
-        Meine größte Stärke war immer meine enorme Energie. Doch das wurde mir erst viel später wirklich klar. Es schien, als sei ich dazu bestimmt, einen Weg voller Selbstzweifel und innerer Unsicherheit zu gehen, auf dem ich ständig gegen mich selbst kämpfte. Ich versuchte sogar  Berufe zu finden, die nichts mit Musik zu tun hatten. Doch nach kürzeren oder längeren „Abstechern“ fand ich immer wieder den Weg zurück zur Musik.<br><br>
-        Heute weiß ich, dass „Perfektion“ in jedem von uns nur auf eine ganz persönliche, „unperfekte“ Weise existiert und sich nicht messen lässt! Alles wird stark von der persönlichen Entwicklung und den gemachten Erfahrungen beeinflusst. Letztlich ist es nicht die perfekte Technik oder der makellose Klang, die uns ergreifen, sondern die Energie, die wir ausstrahlen und freisetzen.<br><br>
-        Energie ist der Schlüssel - zur Verbindung mit dem Publikum, zur Erschaffung magischer Momente, zur Berührung der Herzen.<br><br>
-        <i>„Interpretation versucht, das Unbewusste freizusetzen. Wenn man Dinge loslassen kann, von denen man nicht weiß, dass sie da sind - das Unerwartete und die Überraschungen in der Aufführung“.</i> Martha Argerich<br><br>
-        Das ist es, was die Kunst so einzigartig macht – ihre Fähigkeit zur Transzendenz.<br><br>
-        Musik ist lebendig. Sie ist die einzige Kunstart, die nur im selben Augenblick existiert und dann verschwindet. Sie ist unmittelbar und kann ohne Vorwarnung überwältigen. Ihre Wirkung ist unvergleichlich. Wenn Musik Emotionen weckt, wenn Zuhörer in einem einzigen Klang die ganze Vielfalt des Lebens spüren, dann wird die wahre Aufgabe der Kunst erfüllt: Sie bewegt, verbindet und inspiriert.<br><br>
-        <i>„Licht in die Tiefe des menschlichen Herzens senden - Künstlers Beruf“.</i> Robert Schumann`,
-    images: [
-      { src: 'assets/images/diana-pianist-hands.jpg', alt: 'Dianas Hände am Klavier' },
-      { src: 'assets/images/diana-pianist-choir.jpg', alt: 'Diana begleitet ein Chorkonzert' },
-      { src: 'assets/images/diana-pianist-baby.jpg', alt: 'Baby Diana am Klavier' },
-      { src: 'assets/images/diana-piano-after-a-concert.jpg', alt: 'Diana glücklich nach einem Konzert mit einem Blumenstrauss vor dem Konzerthaus' }
-    ],
-    audios: [
-      { title: 'Piano Concerto no. 5 in Eb "Emperor", Op. 73 - II. Adagio un poco mosso', author: 'Beethoven', src: 'assets/media/audios/L.v.Beethoven_Piano_Concerto_no.5_in_Eb_Emperor_Op.73-II.Adagio_un_poco_mosso.mp3'},
-      { title: 'Piano Concerto no. 5 in Eb "Emperor", Op. 73 - III. Rondo_ Allegro ma non troppo', author: 'Beethoven' , src: 'assets/media/audios/L.v.Beethoven_Piano_Concerto_no.5_in_Eb _EmperorOp.73.III.Rondo_ Allegro_ma_non_troppo.mp3' },
-      { title: 'Nocturne in C sharp minor "Lento con gran espressione", B. 49 (Op. posth.)', author: 'Chopin' , src: 'assets/media/audios/F.Chopin_Nocturne_in_C_sharp_minor_Lento_con_gran_espressione_B.49.mp3' }
-    ],
     videos: [],
     youtubeLinks: [
       { title: 'Ballade Nr.2 F-Dur', author: 'Chopin', src: 'https://www.youtube.com/watch?v=_JdcIBlp6mo' },
@@ -143,7 +107,14 @@ export const PROFILES: IProfile[] = [
       { src: 'assets/images/Diana-singt-und-tanzt.jpg', alt: 'Diana singt auf der Bühne mit Kerzenlicht' }
     ],
     audios: [
-        { title: 'Como imaginar' , author: 'Chico Novarro' , src: 'assets/media/audios/prueba.mp4' }
+      { title: 'María de Buenos Aires (Astor Piazolla)' , author: 'Las Dibas' , src: 'assets/media/audios/audio-singer-maria-de-buenos-astor-piazzolla-performer-las-dibas.wav' },
+      { title: 'La Nave del Olvido (Jose Luis Perales)' , author: 'Projekt "Pasión"' , src: 'assets/media/audios/audio-singer-la-nave-del-olvido-jose-luis-perales-project-pasion.mp3' },
+      { title: 'Kadiaľ íst (Francis Lai)' , author: 'Diana Vizváry' , src: 'assets/media/audios/audio-singer-hadam-kadial-ist-francis-lai-sk.mp3' },
+      { title: 'Granada (Agustín Lara)' , author: 'Projekt "Pasión"' , src: 'assets/media/audios/audio-singer-granada-augustin-lara-project-pasion.mp3' },
+      { title: 'Chiquilín de Bachín (Astor Piazolla)' , author: 'Las Dibas' , src: 'assets/media/audios/audio-singer-chiquilin-de-bachin-astor-piazzolla-performer-las-dibas.mp3' },
+      { title: 'Caruso (Lucio Dalla)' , author: 'Las Dibas' , src: 'assets/media/audios/audio-singer-caruso-lucio-dalla-performer-las-dibas.wav' },
+      { title: 'Amor Eterno (Juan Gabriel)' , author: 'Diana Vizváry' , src: 'assets/media/audios/audio-singer-amor-eterno-juan-gabriel.wav' },
+      { title: 'Adagio' , author: 'Las Dibas' , src: 'assets/media/audios/audio-singer-adagio-performer-las-dibas.wav' },
     ],
     videos: [
       { title: 'Te quiero tanto (Pasión Vega)', author: 'Diana & Friends', src: 'assets/media/videos/singer-diana-te-quiero-tanto.mp4' },
