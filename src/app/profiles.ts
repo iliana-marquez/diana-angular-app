@@ -45,7 +45,7 @@ export const PROFILES: IProfile[] = [
         Musik ist lebendig. Sie ist die einzige Kunstart, die nur im selben Augenblick existiert und dann verschwindet. Sie ist unmittelbar und kann ohne Vorwarnung überwältigen. Ihre Wirkung ist unvergleichlich. Wenn Musik Emotionen weckt, wenn Zuhörer in einem einzigen Klang die ganze Vielfalt des Lebens spüren, dann wird die wahre Aufgabe der Kunst erfüllt: Sie bewegt, verbindet und inspiriert.<br><br>
         <i>„Licht in die Tiefe des menschlichen Herzens senden - Künstlers Beruf“.</i> Robert Schumann`,
     images: [
-        { src: 'assets/images/diana-pianist-hands.jpg', alt: 'Dianas Hände am Klavier' },
+        { src: 'assets/images/diana-pianist-hands.png', alt: 'Dianas Hände am Klavier' },
         { src: 'assets/images/diana-pianist-choir.jpg', alt: 'Diana begleitet ein Chorkonzert' },
         { src: 'assets/images/diana-pianist-baby.jpg', alt: 'Baby Diana am Klavier' },
         { src: 'assets/images/diana-piano-after-a-concert.jpg', alt: 'Diana glücklich nach einem Konzert mit einem Blumenstrauss vor dem Konzerthaus' }
