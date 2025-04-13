@@ -6,10 +6,29 @@
 
 .accordion-button {
     background-color: var(--highlight-primary-color);
+    font-size: 1.2rem;
+    font-weight: 400;
 }
 
-.accordion-button:focus {
-    box-shadow: 0; 
+.outer {
+    border-top: 2px solid var(--highlight-secondary-color);
+    border-bottom: 2px solid var(--highlight-secondary-color);
+
+}
+
+.inner {
+    border: 2px solid var(--highlight-secondary-color);
+}
+
+
+.accordion-button:focus,
+.accordion-button:active {
+    box-shadow: none !important; 
+}
+
+.accordion-button:not(.collapsed) {
+    box-shadow: none !important; /* Also prevent it when expanded */
+    color: var(--primary-color);
 }
 
 .accordion-body {
