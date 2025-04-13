@@ -129,7 +129,7 @@ export const PROFILES: IProfile[] = [
       { src: 'assets/images/coach-2.jpg', alt: 'Diana erklärt ein Kind beim Unterricht' }
     ],
     audios: [
-        { title: 'Piano Trio in G major, K. 564 - III. Allegretto', author: 'Mozart' , src: 'assets/media/audios/Mozart_Piano_Trio_in_G_major_K.564-III.Allegretto.mp3' }
+      { title: 'Piano Trio in G major, K. 564 - III. Allegretto', author: 'Mozart' , src: 'assets/media/audios/Mozart_Piano_Trio_in_G_major_K.564-III.Allegretto.mp3' }
     ],
     videos: [
       { title: 'Coaching Erfahrung', author: 'mit Christian Kelly', src: 'assets/media/videos/student-feedback-kristian.mov' }
@@ -163,12 +163,12 @@ export const PROFILES: IProfile[] = [
         { title: 'Como imaginar' , author: 'Chico Novarro' , src: 'assets/media/audios/prueba.mp4' }
     ],
     videos: [
-      { title: 'Cielito Lindo (Quirino Mendoza)', author: 'Diana & Friends', src: 'assets/media/videos/singer-diana-carlos-cielito-lindo.mp4' },
       { title: 'Te quiero tanto (Pasión Vega)', author: 'Diana & Friends', src: 'assets/media/videos/singer-diana-te-quiero-tanto.mp4' },
       { title: 'Keď harmonika tíško znie (Antônio Carlos Jobim)', author: 'Diana & Friends', src: 'assets/media/videos/singer-diana-ked-harmonika.mp4' },
       { title: 'Perdón (Pedro Flores)', author: 'Diana & Friends', src: 'assets/media/videos/singer-diana-perdon.mp4' },
       { title: 'Capullito de Alelí (Rafael Hernandez)', author: 'Diana & Friends', src: 'assets/media/videos/singer-diana-capullito-de-aleli.mp4' },
       { title: 'Podmoskovnye Vecera (Solovyov-Sedoi / Matusovsky)', author: 'Diana & Friends', src: 'assets/media/videos/singer-diana-podmoskovnye-vecera.mp4.mp4' },
+      { title: 'Cielito Lindo (Quirino Mendoza)', author: 'Diana & Friends', src: 'assets/media/videos/singer-diana-carlos-cielito-lindo.mp4' }
     ],
     youtubeLinks: [
       { title: 'Desafinado (Antônio Carlos Jobim)', author: 'Diana & Friends', src: 'https://www.youtube.com/watch?v=V__Wp66fh4M' },

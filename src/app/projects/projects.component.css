@@ -4,6 +4,11 @@
     z-index: 0;
 }
 
+.col-12 h2 {
+    font-weight: 200;
+    color: var(--tertiary-color);
+}
+
 .accordion-button {
     background-color: var(--highlight-primary-color);
     font-size: 1.2rem;
