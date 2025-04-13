@@ -16,7 +16,16 @@ export const PROFILES: IProfile[] = [
         <br><br>    
         Denn: Kunst ist kein Luxus. Kunst ist lebensnotwendig!`,
     images: [
-        { src: 'assets/images/diana-pianist-hands.jpg', alt: 'Dianas Hände am Klavier' },
+        { src: 'assets/images/aktivistin-1.jpeg', alt: 'Diana glücklich mit Freunde Künstlern und Publikum' },
+        { src: 'assets/images/aktivistin-2.jpg', alt: 'Diana glücklich mit Freunde Künstlern und Publikum' },
+        { src: 'assets/images/aktivistin-3.jpg', alt: 'Diana glücklich mit Freunde Künstlern und Publikum' },
+        { src: 'assets/images/aktivistin-4.jpg', alt: 'Diana glücklich mit Freunde Künstlern und Publikum' },
+        { src: 'assets/images/aktivistin-5.jpg', alt: 'Diana glücklich mit Freunde Künstlern und Publikum' },
+        { src: 'assets/images/aktivistin-6.jpg', alt: 'Diana glücklich mit Freunde Künstlern und Publikum' },
+        { src: 'assets/images/aktivistin-7.jpeg', alt: 'Diana glücklich mit Freunde Künstlern und Publikum' },
+        { src: 'assets/images/aktivistin-8.jpg', alt: 'Diana glücklich mit Freunde Künstlern und Publikum' },
+        { src: 'assets/images/aktivistin-9.jpg', alt: 'Diana glücklich mit Freunde Künstlern und Publikum' },
+        { src: 'assets/images/aktivistin-10.jpg', alt: 'Diana glücklich mit Freunde Künstlern und Publikum' },
     ],
     audios: [],
     videos: [],
