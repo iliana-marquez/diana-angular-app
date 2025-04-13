@@ -181,21 +181,31 @@ export const PROFILES: IProfile[] = [
         Was mich dabei besonders begeistert, ist es, Phrasen, Gedanken und Geschichten auf ganz unterschiedliche Weise zu gestalten – mit Melodie, Klangfarbe und Rhythmus Emotionen zu wecken und Menschen unmittelbar zu berühren.<br><br>
         Ob sanft oder kraftvoll, sinnlich oder sachlich – meine Stimme ist mein Instrument, um Inhalte mit Leben zu füllen und ein breites Publikum zu erreichen.`,
     images: [
-      { src: 'assets/images/diana-speaker-1.jpg', alt: 'Diana am Record Studio bei einem Sprechen Session' },
-      { src: 'assets/images/diana-speaker-2.jpg', alt: 'Diana beim Aufnehmen' }
+      { src: 'assets/images/speaker-1.png', alt: 'Diana biem Aufnehmen im Record Studio' },
+      { src: 'assets/images/speaker-3.png', alt: 'Diana biem Aufnehmen im Record Studio' },
+      { src: 'assets/images/speaker-4.jpg', alt: 'Diana biem Aufnehmen im Record Studio' },
+      { src: 'assets/images/speaker-6.png', alt: 'Diana biem Aufnehmen im Record Studio' },
+      { src: 'assets/images/speaker-10.png', alt: 'Diana biem Aufnehmen im Record Studio' },
+      { src: 'assets/images/speaker-15.png', alt: 'Diana biem Aufnehmen im Record Studio' },
     ],
     audios: [
-        { title: 'Winter Sale Werbung - Designer Outlet Parndorf (SK)', author: 'Studio Wunderbar' , src: 'assets/media/audios/audio-1-speaker-werbung-designer-outlet-parndorf-winter-sale-sk-studio-wunderbar.mp3' },
-        { title: 'Voicemail (SK/EN)', author: 'Studio Gosh' , src: 'assets/media/audios/audio-2-speaker-voicemail-studio-gosh-sk-eng.mp3' },
-        { title: 'Werbung - My Austrian (SK)', author: 'Studio Cosmix' , src: 'assets/media/audios/audio-3-speaker-werbung-my-austrian-sk-studio-cosmix.mp3' },
-        { title: 'Prosa - Prolog aus dem Buch "Nad Priepastou" (SK)', author: 'Maria Mavranova' , src: 'assets/media/audios/audio-4-speaker-prosa-prolog-buch-maria-havranova-nad-priepastou-sk.mp3' },
-        { title: 'Werbung - XXXLutz (HU)', author: 'Studio Soundfeiler' , src: 'assets/media/audios/audio-5-speaker-werbung-xxxlutz-hu.mp3' },
-        { title: 'Prosa - Dialog aus dem Buch "Nad Priepastou" (SK)', author: 'Maria Mavranova' , src: 'assets/media/audios/audio-6-speaker-prosa-dialog-buch-maria-havranova-nad-priepastou-sk.mp3' },
-        { title: 'Woman Day Werbung - Designer Outlet Parndorf (SK)', author: 'Studio Wunderbar' , src: 'assets/media/audios/audio-7-speaker-werbung-designer-outlet-parndorf-woman-day-20-sk-studio-wunderbar.mp3' },
-        { title: 'Voicemail (EN/SK)', author: 'Studio Wunderbar' , src: 'assets/media/audios/audio-8-speaker-voicemail-studio-gosh-eng-sk.mp3' },
-        { title: 'Prosa - Finale aus dem Buch "Nad Priepastou" (SK)', author: 'Maria Mavranova' , src: 'assets/media/audios/audio-9-speaker-prosa-finale-buch-maria-havranova-nad-priepastou-sk.mp3' },
+      { title: 'Winter Sale Werbung - Designer Outlet Parndorf (SK)', author: 'Studio Wunderbar' , src: 'assets/media/audios/audio-1-speaker-werbung-designer-outlet-parndorf-winter-sale-sk-studio-wunderbar.mp3' },
+      { title: 'Voicemail (SK/EN)', author: 'Studio Gosh' , src: 'assets/media/audios/audio-2-speaker-voicemail-studio-gosh-sk-eng.mp3' },
+      { title: 'Werbung - My Austrian (SK)', author: 'Studio Cosmix' , src: 'assets/media/audios/audio-3-speaker-werbung-my-austrian-sk-studio-cosmix.mp3' },
+      { title: 'Prosa - Prolog aus dem Buch "Nad Priepastou" (SK)', author: 'Maria Mavranova' , src: 'assets/media/audios/audio-4-speaker-prosa-prolog-buch-maria-havranova-nad-priepastou-sk.mp3' },
+      { title: 'Werbung - XXXLutz (HU)', author: 'Studio Soundfeiler' , src: 'assets/media/audios/audio-5-speaker-werbung-xxxlutz-hu.mp3' },
+      { title: 'Prosa - Dialog aus dem Buch "Nad Priepastou" (SK)', author: 'Maria Mavranova' , src: 'assets/media/audios/audio-6-speaker-prosa-dialog-buch-maria-havranova-nad-priepastou-sk.mp3' },
+      { title: 'Woman Day Werbung - Designer Outlet Parndorf (SK)', author: 'Studio Wunderbar' , src: 'assets/media/audios/audio-7-speaker-werbung-designer-outlet-parndorf-woman-day-20-sk-studio-wunderbar.mp3' },
+      { title: 'Voicemail (EN/SK)', author: 'Studio Wunderbar' , src: 'assets/media/audios/audio-8-speaker-voicemail-studio-gosh-eng-sk.mp3' },
+      { title: 'Prosa - Finale aus dem Buch "Nad Priepastou" (SK)', author: 'Maria Mavranova' , src: 'assets/media/audios/audio-9-speaker-prosa-finale-buch-maria-havranova-nad-priepastou-sk.mp3' },
     ],
-    videos: [],
-    youtubeLinks: []
+    videos: [
+      { title: 'Recording Session - Studio Wunderbar', author: 'für Designer Outlet Parndorf', src: 'assets/media/videos/video-3-speaker-werbung-designer-outlet-parndorf-studio-wunderbar.MP4' },
+      { title: 'Studio Wunderbar - Recording Session', author: 'für Designer Outlet Parndorf', src: 'assets/media/videos/video-4-speaker-werbung-designer-outlet-parndorf-studio-wunderbar.MP4' },
+
+    ],
+    youtubeLinks: [
+      { title: 'LKW WALTER - Ihr europäischer Transporter (SK)', author: 'Image Film', src: 'https://www.youtube.com/watch?v=Z7WCUm5xBdQ&t=37s&ab_channel=LKWWALTERInternationaleTransportorganisationAG' },
+    ]
   }
 ];
