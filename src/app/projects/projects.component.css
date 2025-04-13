@@ -35,6 +35,11 @@
     background-color: var(--secondary-color) !important;
 }
 
+.video-links a {
+    display: block;
+    color: var(--tertiary-color);
+}
+
 .carousel {
     border-radius: 2.5rem;
 }
@@ -54,6 +59,23 @@
     object-fit: cover;
     object-position: center;
 }
+
+/* project carousel caption */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.781);
+    font-family: var(--tertiary-font);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 0 0 2.5rem 2.5rem;
+}
+
+.carousel-caption p {
+    margin-bottom: 0;
+}   
 
 @media screen and (min-width: 576px) {
 
