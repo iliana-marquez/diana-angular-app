@@ -180,7 +180,8 @@ button {
 .row {
     margin-left: 0 !important;
     margin-right: 0 !important;
-  }
+    --bs-gutter-x: 0 !important;
+}
 
 /* Navigation */
 header {
@@ -376,7 +377,6 @@ p {
     height: 25vh;
     width: 25vh;
 }
-
 
 /* Carrer Section About Page */
 #carreer {
