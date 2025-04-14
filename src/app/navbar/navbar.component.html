@@ -2,7 +2,7 @@
     <div class="nav-container">
       <!-- Logo / Home Link -->
       <div class="static-navbar">
-        <a style="cursor: pointer" (click)="goHome()">
+        <a style="cursor: pointer" (click)="goHome(); closeMenu()">
           <img id="logo"  [ngClass]="{
             'scrolled': !isHomePage && hasScrolled || (isHomePage && hasScrolled)
           }" src="assets/images/logo.png" alt="Diana Vizvary">
