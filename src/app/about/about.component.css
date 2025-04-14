@@ -1,0 +1,14 @@
+#carreer * p,
+#about-relevant-info * p {
+    padding: 1.5rem; 
+    margin: 0;   
+}
+
+@media screen and (min-width: 576px) {
+
+    #carreer * p,
+    #about-relevant-info * p  {
+        padding: 2rem;    
+    }
+
+}

@@ -426,16 +426,18 @@ p {
 
 #carreer-foto-8 {
     background: url('assets/images/dianas-vater.jpg') no-repeat top center / cover;
-    border: solid 5px var(--primary-color);
-    min-height: 350px;
+    border: solid 8px var(--primary-color);
+    width: 100%;
+    min-height: 300px;
 }
 
 .father-section {
     background-color: var(--highlight-secondary-color);
     font-size: 0.8rem;
     color: var(--primary-color);
-    border-left: solid 16px var(--primary-color);
-    border-right: solid 16px var(--primary-color);
+    width: 90%;
+    padding: 1rem;
+    text-align: center;
 }
 
 /* Relevant-Info Section */
@@ -443,6 +445,7 @@ p {
 #about-relevant-info {
     background-color: var(--primary-color);
     color: var(--secondary-color);
+    padding-bottom: 2rem;
 }
 
 /* Footer */
@@ -525,6 +528,10 @@ footer #contact i {
         width: 500px;
     }
 
+    #carreer-foto-8 {
+        min-height: 400px;
+    }    
+
 }
 
 /* Medium devices (tablets, 768px and up*/
@@ -561,7 +568,7 @@ footer #contact i {
     #about-hero-image {
         height: 295px;
     }
-    
+
     /* Footer */
     footer #address,
     footer #contact {
@@ -638,10 +645,6 @@ footer #contact i {
     }
 
     /* About Section */
-    .father-section {
-        border-left: solid 50px var(--primary-color);
-        border-right: solid 50px var(--primary-color);
-    }
 }
 
 /* Extra large devices (laptops, 1200px and up*/
@@ -670,10 +673,7 @@ footer #contact i {
     }
 
     /* About Section */
-    .father-section {
-        border-left: solid 100px var(--primary-color);
-        border-right: solid 100px var(--primary-color);
-    }
+
     
     /* Footer */
     #address {
