@@ -16,6 +16,18 @@ span {
     color: var(--highlight-tertiary-color);
 }
 
+#a-footer {
+    text-transform: none;
+    font-size: 1rem;
+    text-decoration: underline;
+    transition: ease-in-out 0.3s;
+}
+#a-footer:hover {
+    text-transform: none;
+    font-size: 1rem;
+    color: var(--highlight-secondary-color);
+}
+
 /* Media queries */
 /* Small devices (mobile, 576px and up*/
 @media screen and (min-width: 576px) {
