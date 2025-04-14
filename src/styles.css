@@ -177,6 +177,11 @@ button {
     border-radius: 0;
 }
 
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
 /* Navigation */
 header {
     position: fixed;
