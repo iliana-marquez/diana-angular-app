@@ -1,3 +1,7 @@
+.row {
+  overflow: hidden;
+}
+
 .my-card {
     border: solid 2px var(--highlight-secondary-color);
     padding: 1rem;
