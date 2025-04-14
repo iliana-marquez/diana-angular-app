@@ -143,7 +143,7 @@ export const PROFILES: IProfile[] = [
       { title: 'Keď harmonika tíško znie (Antônio Carlos Jobim)', author: 'Diana & Friends', src: 'assets/media/videos/singer-diana-ked-harmonika.mp4' },
       { title: 'Perdón (Pedro Flores)', author: 'Diana & Friends', src: 'assets/media/videos/singer-diana-perdon.mp4' },
       { title: 'Capullito de Alelí (Rafael Hernandez)', author: 'Diana & Friends', src: 'assets/media/videos/singer-diana-capullito-de-aleli.mp4' },
-      { title: 'Podmoskovnye Vecera (Solovyov-Sedoi / Matusovsky)', author: 'Diana & Friends', src: 'assets/media/videos/singer-diana-podmoskovnye-vecera.mp4.mp4' },
+      { title: 'Podmoskovnye Vecera (Solovyov-Sedoi / Matusovsky)', author: 'Diana & Friends', src: 'assets/media/videos/singer-diana-podmoskovnye-vecera.mp4' },
       { title: 'Cielito Lindo (Quirino Mendoza)', author: 'Diana & Friends', src: 'assets/media/videos/singer-diana-carlos-cielito-lindo.mp4' },
       { title: 'La Llorona (Andres Henestrosa)', author: 'Diana & Friends', src: 'assets/media/videos/video-singer-la-llorona.mp4' },
       { title: 'La malagueña (Ramírez / Galindo)', author: 'Diana & Friends', src: 'assets/media/videos/video-singer-malagena.mp4' },
