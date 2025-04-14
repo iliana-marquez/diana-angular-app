@@ -45,6 +45,10 @@ export class NavbarComponent implements OnInit {
       filter(event => event instanceof NavigationEnd)
     ).subscribe((event: NavigationEnd) => {
       this.isOnProfilePage = event.urlAfterRedirects.startsWith('/profile/');
+      this.setHomePageStatus(); 
+      setTimeout(() => this.onScroll(), 0);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+
     });
 
     this.menuSub = this.menuService.closeMenu$.subscribe(() => {
