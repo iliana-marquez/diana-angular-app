@@ -30,7 +30,7 @@ The website features:
 - **CSS Variables** for theme consistency
 
 
-### Media & Credits
+## Media & Credits
 
 All content, media, and visuals are the artistic work of Diana Vizváry.
 Design and user flow were tailored to reflect her interdisciplinary identity across:
