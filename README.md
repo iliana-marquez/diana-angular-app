@@ -1,59 +1,47 @@
-# DianaAngularApp
+# Diana Vizváry – Official Website
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.6.
+Welcome to the source code of the official website for [Diana Vizváry](https://dianavizvary.com/) — pianist, music coach, singer, speaker, and cultural activist.
 
-## Development server
+This responsive Angular website showcases Diana's artistic journey, media content, and creative projects through a clean layout with a strong focus on design, accessibility, and performance.
 
-To start a local development server, run:
 
-```bash
-ng serve
-```
+🔗 [livesite](https://dianavizvary.com)
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+![Screenshot](src/assets/images/responsivness.png)
 
-## Code scaffolding
+## Features
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+The website features:
 
-```bash
-ng generate component component-name
-```
+- A **modern portfolio** and profile-based navigation
+- Each profile has a media section with: **Audios, videos and youtube links carousels**
+- Responsive mobile first design
+- Smooth scroll and scroll-reset behavior for UX consistency
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-```bash
-ng generate --help
-```
+## Technologies Used
 
-## Building
+- **Angular 19.2.6.**
+- **TypeScript**
+- **SCSS / CSS**
+- **Bootstrap 5** (Accordion, Carousel, etc.)
+- **FontAwesome** (Icons)
+- **HTML5 + Responsive Design** (Mobile, Tablet, Desktop)
+- **CSS Variables** for theme consistency
 
-To build the project run:
 
-```bash
-ng build
-```
+### Media & Credits
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+All content, media, and visuals are the artistic work of Diana Vizváry.
+Design and user flow were tailored to reflect her interdisciplinary identity across:
 
-## Running unit tests
+    - Arts activism and cultural engagement
+    - Classical piano performance 
+    - Music coaching
+    - Singing and speaking
+    
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## License
 
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+This repository is for educational and portfolio presentation purposes.
+All content (images, texts, videos) is protected and may not be used commercially without permission.
