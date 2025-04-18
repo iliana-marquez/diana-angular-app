@@ -24,7 +24,7 @@ The website features:
 - **Angular 19.2.6.**
 - **TypeScript**
 - **SCSS / CSS**
-- **Bootstrap 5** (Accordion, Carousel, etc.)
+- **Bootstrap 5** (Accordion, Carousel, Responsive Grid System)
 - **FontAwesome** (Icons)
 - **HTML5 + Responsive Design** (Mobile, Tablet, Desktop)
 - **CSS Variables** for theme consistency
@@ -39,7 +39,7 @@ Design and user flow were tailored to reflect her interdisciplinary identity acr
     - Classical piano performance 
     - Music coaching
     - Singing and speaking
-    
+
 
 ## License
 
