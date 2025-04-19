@@ -29,6 +29,10 @@
     font-weight: 200;
 }
 
+html {
+    scroll-padding-top: 120px; 
+}
+
 a {
     text-decoration: none;
 }
@@ -500,6 +504,10 @@ footer #contact i {
 
 /* Small devices (mobile, 576px and up*/
 @media screen and (min-width: 576px) {
+    html {
+        scroll-padding-top: 125px; 
+    }
+
     .custom-btn {
         font-size: 1.25rem;
     }
@@ -535,6 +543,11 @@ footer #contact i {
 
 /* Medium devices (tablets, 768px and up*/
 @media screen and (min-width: 768px) {
+
+    html {
+        scroll-padding-top: 150px; 
+    }
+    
 
     /* Navigation */
     #logo {
