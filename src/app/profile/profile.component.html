@@ -73,11 +73,11 @@
                         </div>
                       </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#audioCarousel" data-bs-slide="prev">
+                    <button *ngIf="(profile?.audios?.length ?? 0) > 1" class="carousel-control-prev" type="button" data-bs-target="#audioCarousel" data-bs-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#audioCarousel" data-bs-slide="next">
+                    <button *ngIf="(profile?.audios?.length ?? 0) > 1" class="carousel-control-next" type="button" data-bs-target="#audioCarousel" data-bs-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Next</span>
                     </button>
@@ -101,11 +101,11 @@
                         </div>
                       </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+                    <button *ngIf="(profile?.videos?.length ?? 0) > 1" class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+                    <button *ngIf="(profile?.videos?.length ?? 0) > 1" class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Next</span>
                     </button>
@@ -127,11 +127,11 @@
                         </div>
                       </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#linksCarousel" data-bs-slide="prev">
+                    <button *ngIf="(profile?.youtubeLinks?.length ?? 0) > 1" class="carousel-control-prev" type="button" data-bs-target="#linksCarousel" data-bs-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#linksCarousel" data-bs-slide="next">
+                    <button *ngIf="(profile?.youtubeLinks?.length ?? 0) > 1" class="carousel-control-next" type="button" data-bs-target="#linksCarousel" data-bs-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Next</span>
                     </button>
